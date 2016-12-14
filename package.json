@@ -35,6 +35,7 @@
     "commander": "^2.9.0",
     "debug": "^2.3.3",
     "loop-things": "0.0.9",
+    "meta-git": "0.0.0",
     "spawn-to-readstream": "^0.1.3",
     "tabtab": "^2.2.1"
   }
