@@ -1,0 +1,31 @@
+#!/usr/bin/env node
+
+const debug = require('debug')('meta');
+const listDirectories = require('../lib/listDirectories');
+const path = require('path');
+const registerPlugin = require('../lib/registerPlugin');
+const tabtab = require('tabtab');
+
+process.on('uncaughtException', (err) => {
+  console.error(err);
+  process.exit(1);
+});
+
+const dirs = listDirectories(path.join(path.resolve(__dirname), '..', 'node_modules'));
+
+const program = require('commander')
+  .version(require('../package.json').version);
+
+dirs.forEach(registerPlugin.bind(this, program));
+
+if(process.argv.slice(2)[0] === 'completion') return tabtab.complete('meta', (err, data) => {
+  if(err || !data) return;
+
+  if(/^--\w?/.test(data.last)) return tabtab.log(['help', 'version'], data, '--');
+  if(/^-\w?/.test(data.last)) return tabtab.log(['n', 'o', 'd', 'e'], data, '-');
+
+  tabtab.log([create.name], data);
+});
+
+program
+  .parse(process.argv);

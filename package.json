@@ -1,0 +1,41 @@
+{
+  "name": "meta",
+  "version": "1.0.0",
+  "description": "tool for turning many repos into a meta repo. why choose many repos or a monolithic repo, when you can have both with a meta repo?",
+  "main": "./bin/meta",
+  "bin": {
+    "meta": "./bin/meta"
+  },
+  "scripts": {
+    "install": "tabtab install",
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mateodelnorte/meta.git"
+  },
+  "keywords": [
+    "git",
+    "repo",
+    "repository",
+    "repositories",
+    "meta",
+    "metarepo",
+    "metarepository",
+    "project",
+    "many"
+  ],
+  "author": "hi@iammattwalters.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mateodelnorte/meta/issues"
+  },
+  "homepage": "https://github.com/mateodelnorte/meta#readme",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "debug": "^2.3.3",
+    "loop-things": "0.0.9",
+    "spawn-to-readstream": "^0.1.3",
+    "tabtab": "^2.2.1"
+  }
+}
