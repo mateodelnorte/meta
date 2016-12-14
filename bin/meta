@@ -16,6 +16,8 @@ const dirs = listDirectories(path.join(path.resolve(__dirname), '..', 'node_modu
 const program = require('commander')
   .version(require('../package.json').version);
 
+debug(`registering plugins: ${dirs}`);
+
 dirs.forEach(registerPlugin.bind(this, program));
 
 if(process.argv.slice(2)[0] === 'completion') return tabtab.complete('meta', (err, data) => {
