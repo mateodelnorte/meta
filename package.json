@@ -1,6 +1,6 @@
 {
   "name": "meta",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "tool for turning many repos into a meta repo. why choose many repos or a monolithic repo, when you can have both with a meta repo?",
   "main": "./bin/meta",
   "bin": {
@@ -32,9 +32,9 @@
   },
   "homepage": "https://github.com/mateodelnorte/meta#readme",
   "dependencies": {
-    "commander": "^2.9.0",
+    "commander": "ssh+git://git@github.com:mateodelnorte/commander.js.git",
     "debug": "^2.3.3",
-    "meta-git": "0.0.5",
+    "meta-git": "0.0.6",
     "spawn-to-readstream": "^0.1.3",
     "tabtab": "^2.2.1"
   }
