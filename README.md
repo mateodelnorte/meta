@@ -43,6 +43,8 @@ Meta is a work in progress. So far just `git clone` and `git status` are impleme
 
 The git functionality above is provided to meta via the [meta-git](https://github.com/mateodelnorte/meta-git) plugin. 
 Meta, itself, actually only implements functionality to load plugins, provide tab completion, and render help text. As such,
-all functionality comes from plugins. Want to add functionality to run against your entire system, composed of many repos, all 
+all functionality comes from plugins. 
+
+Want to add functionality to run against your entire system, composed of many repos, all 
 at once? Write a plugin! Plugins follow the git-subcommand pattern of commander.js and implement a single index.js function 
 to apply their top level menu to the bare meta command. 
