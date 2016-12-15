@@ -1,5 +1,5 @@
 {
   "projects": {
-    "projects/meta-git": "git@github.com:mateodelnorte/meta-git.git"
+    "plugins/meta-git": "git@github.com:mateodelnorte/meta-git.git"
   }
 }
