@@ -1,6 +1,8 @@
 {
+  "ignore": [ ".git", ".vagrant", ".vscode", "node_modules" ],
   "projects": {
     "plugins/loop-things": "git@github.com:mateodelnorte/loop-things.git",
+    "plugins/meta-exec": "git@github.com:mateodelnorte/meta-exec.git",
     "plugins/meta-git": "git@github.com:mateodelnorte/meta-git.git",
     "plugins/meta-project": "git@github.com:mateodelnorte/meta-project.git",
     "plugins/meta-npm": "git@github.com:mateodelnorte/meta-npm.git"
