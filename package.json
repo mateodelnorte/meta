@@ -1,6 +1,6 @@
 {
   "name": "meta",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "tool for turning many repos into a meta repo. why choose many repos or a monolithic repo, when you can have both with a meta repo?",
   "main": "./bin/meta",
   "bin": {
@@ -35,8 +35,8 @@
     "commander": "mateodelnorte/commander.js",
     "cross-env": "^3.1.4",
     "debug": "^2.3.3",
-    "meta-git": "0.0.9",
-    "meta-npm": "0.0.6",
+    "meta-git": "0.0.10",
+    "meta-npm": "0.0.7",
     "tabtab": "^2.2.1"
   }
 }
