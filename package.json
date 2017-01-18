@@ -1,6 +1,6 @@
 {
   "name": "meta",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "tool for turning many repos into a meta repo. why choose many repos or a monolithic repo, when you can have both with a meta repo?",
   "main": "./bin/meta",
   "bin": {
@@ -37,7 +37,9 @@
     "debug": "^2.3.3",
     "lodash.union": "^4.6.0",
     "meta-git": "0.0.11",
-    "meta-npm": "0.0.8",
     "tabtab": "^2.2.1"
+  },
+  "devDependencies": {
+    "meta-npm": "0.0.8"
   }
 }

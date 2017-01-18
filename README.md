@@ -7,7 +7,7 @@ tool for turning many repos into a meta repo. why choose many repos or a monolit
 
 Meta is a work in progress. So far just `git clone` and `git status` are implemented: 
 ```
-➜  development meta
+➜  meta
 
   Usage: meta [options] [command]
 
@@ -15,6 +15,7 @@ Meta is a work in progress. So far just `git clone` and `git status` are impleme
   Commands:
 
     git         manage your meta repo and child git repositories
+    npm         run npm commands against your meta and child repositories
     help [cmd]  display help for [cmd]
 
   Options:
@@ -23,13 +24,14 @@ Meta is a work in progress. So far just `git clone` and `git status` are impleme
     -V, --version  output the version number
 ```
 ```
-➜  development meta git
+➜  meta git
 
   Usage: meta-git [options] [command]
 
 
   Commands:
 
+    checkout    checkout a common branch across all repositories
     clone       clone meta and child repositories
     status      git status of meta and child repositories
     help [cmd]  display help for [cmd]
@@ -39,7 +41,7 @@ Meta is a work in progress. So far just `git clone` and `git status` are impleme
     -h, --help  output usage information
 ```
 
-## Plugins
+## Plugin Architecture
 
 The git functionality above is provided to meta via the [meta-git](https://github.com/mateodelnorte/meta-git) plugin. 
 Meta, itself, actually only implements functionality to load plugins, provide tab completion, and render help text. As such,
