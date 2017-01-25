@@ -5,7 +5,7 @@ tool for turning many repos into a meta repo. why choose many repos or a monolit
 
 ## Usage
 
-Meta is a work in progress. So far just `git clone` and `git status` are implemented: 
+Meta is a work in progress. So far just `git clone`, `git status`, and `git checkout` are implemented: 
 ```
 ➜  meta
 
