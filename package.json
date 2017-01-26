@@ -37,6 +37,7 @@
     "debug": "^2.3.3",
     "lodash.union": "^4.6.0",
     "meta-git": "0.0.11",
+    "meta-init": "0.0.0",
     "tabtab": "^2.2.1"
   },
   "devDependencies": {
