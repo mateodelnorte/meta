@@ -1,6 +1,6 @@
 {
   "name": "meta",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "tool for turning many repos into a meta repo. why choose many repos or a monolithic repo, when you can have both with a meta repo?",
   "main": "./bin/meta",
   "bin": {
@@ -36,12 +36,13 @@
     "cross-env": "^3.1.4",
     "debug": "^2.3.3",
     "lodash.union": "^4.6.0",
-    "meta-git": "0.0.12",
-    "meta-init": "0.0.0",
-    "meta-project": "0.0.0",
+    "meta-exec": "^0.0.1",
+    "meta-git": "^0.0.13",
+    "meta-init": "^0.0.1",
+    "meta-project": "^0.0.1",
     "tabtab": "^2.2.1"
   },
   "devDependencies": {
-    "meta-npm": "0.0.9"
+    "meta-npm": "^0.0.12"
   }
 }

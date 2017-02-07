@@ -1,0 +1,5 @@
+*.
+!book.json
+!README.md
+!SUMMARY.md
+!plugins/**/README.md

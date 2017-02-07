@@ -1,5 +1,10 @@
 {
-  "ignore": [ ".git", ".vagrant", ".vscode", "node_modules" ],
+  "ignore": [
+    ".git",
+    ".vagrant",
+    ".vscode",
+    "node_modules"
+  ],
   "projects": {
     "plugins/loop-things": "git@github.com:mateodelnorte/loop-things.git",
     "plugins/meta-docker": "git@github.com:mateodelnorte/meta-docker.git",
@@ -7,6 +12,7 @@
     "plugins/meta-git": "git@github.com:mateodelnorte/meta-git.git",
     "plugins/meta-init": "git@github.com:mateodelnorte/meta-init.git",
     "plugins/meta-project": "git@github.com:mateodelnorte/meta-project.git",
-    "plugins/meta-npm": "git@github.com:mateodelnorte/meta-npm.git"
+    "plugins/meta-npm": "git@github.com:mateodelnorte/meta-npm.git",
+    "plugins/meta-gitbook": "git@github.com:mateodelnorte/meta-gitbook.git"
   }
 }
