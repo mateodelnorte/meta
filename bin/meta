@@ -19,5 +19,9 @@ debug(`registering plugins: ${dirs}`);
 
 dirs.forEach(registerPlugin.bind(this, program));
 
+const metagit = require('meta-git');
+
+metagit.update({ dryRun: true });
+
 program
   .parse(process.argv);
