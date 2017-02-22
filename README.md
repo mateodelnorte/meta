@@ -33,7 +33,7 @@ run slices of that system. Lerna does not have this capability, but meta does. M
 parts of your code base. And, with some fancy tricks, meta can still provide all the benefits of a metarepo (think a special branch that contains
 you child repository files, for the purpose of continuous integration).
 
-[![asciicast](https://asciinema.org/a/4e5oa02980izleujtrch6bary.png)](https://asciinema.org/a/4e5oa02980izleujtrch6bary)
+<script type="text/javascript" src="https://asciinema.org/a/96140.js" id="asciicast-96140" async></script>
 
 ## Sample Usage
 
