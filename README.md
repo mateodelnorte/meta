@@ -1,6 +1,28 @@
 # meta
 
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<!-- Place this tag where you want the button to render. -->
+<a class="github-button" href="https://github.com/mateodelnorte/meta" data-icon="octicon-star" data-style="mega" data-count-href="/mateodelnorte/meta/stargazers" data-count-api="/repos/mateodelnorte/meta#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star mateodelnorte/meta on GitHub">Star</a>
+<!-- Place this tag where you want the button to render. -->
+<a class="github-button" href="https://github.com/mateodelnorte/meta/subscription" data-icon="octicon-eye" data-style="mega" data-count-href="/mateodelnorte/meta/watchers" data-count-api="/repos/mateodelnorte/meta#subscribers_count" data-count-aria-label="# watchers on GitHub" aria-label="Watch mateodelnorte/meta on GitHub">Watch</a>
+<!-- Place this tag where you want the button to render. -->
+<a class="github-button" href="https://github.com/mateodelnorte/meta/fork" data-icon="octicon-repo-forked" data-style="mega" data-count-href="/mateodelnorte/meta/network" data-count-api="/repos/mateodelnorte/meta#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork mateodelnorte/meta on GitHub">Fork</a>
+<!-- Place this tag where you want the button to render. -->
+<a class="github-button" href="https://github.com/mateodelnorte/meta/issues" data-icon="octicon-issue-opened" data-style="mega" data-count-api="/repos/mateodelnorte/meta#open_issues_count" data-count-aria-label="# issues on GitHub" aria-label="Issue mateodelnorte/meta on GitHub">Issue</a>
+
 A tool for managing multi-project systems and libraries. Why choose between a monorepo and many repos, when you can have a meta repo?
+
+## benefits
+
+  - clone a many-project architecture in one line
+  - give every engineer on your team the same project setup, regardless of where it's cloned
+  - npm / yarn install against all your projects at once
+  - loop arbitrary commands to manage your projects
+  - super simple plugin architecture using commander.js
+  - meta repo keeps code in per project repos, benefiting deployment and reuse
+  - same tools you always use. no strange side effects of submodules or subtree
+  - give different teams different slices of your architecture, with multiple metarepos!
 
 ## Why meta?
 

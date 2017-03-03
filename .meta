@@ -13,6 +13,7 @@
     "plugins/meta-init": "git@github.com:mateodelnorte/meta-init.git",
     "plugins/meta-project": "git@github.com:mateodelnorte/meta-project.git",
     "plugins/meta-npm": "git@github.com:mateodelnorte/meta-npm.git",
-    "plugins/meta-gitbook": "git@github.com:mateodelnorte/meta-gitbook.git"
+    "plugins/meta-gitbook": "git@github.com:mateodelnorte/meta-gitbook.git",
+    "plugins/meta-yarn": "git@github.com:mateodelnorte/meta-yarn.git"
   }
 }
