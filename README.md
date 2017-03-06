@@ -24,6 +24,8 @@ A tool for managing multi-project systems and libraries. Why choose between a mo
   - same tools you always use. no strange side effects of submodules or subtree
   - give different teams different slices of your architecture, with multiple metarepos!
 
+[![asciicast](https://asciinema.org/a/4e5oa02980izleujtrch6bary.png)](https://asciinema.org/a/4e5oa02980izleujtrch6bary)
+
 ## Why meta?
 
 Most developers, at some point in their careers, work on what they later learn was a monolithic appication. And, typically, they walk
@@ -54,8 +56,6 @@ Over time, it makes less sense to have a single repository define the entire sys
 run slices of that system. Lerna does not have this capability, but meta does. Meta can allow finer grained access permissions to different
 parts of your code base. And, with some fancy tricks, meta can still provide all the benefits of a metarepo (think a special branch that contains
 you child repository files, for the purpose of continuous integration).
-
-<script type="text/javascript" src="https://asciinema.org/a/96140.js" id="asciicast-96140" async></script>
 
 ## Sample Usage
 
