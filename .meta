@@ -11,6 +11,7 @@
     "plugins/meta-exec": "git@github.com:mateodelnorte/meta-exec.git",
     "plugins/meta-git": "git@github.com:mateodelnorte/meta-git.git",
     "plugins/meta-init": "git@github.com:mateodelnorte/meta-init.git",
+    "plugins/meta-loop": "git@github.com:mateodelnorte/meta-loop.git",
     "plugins/meta-project": "git@github.com:mateodelnorte/meta-project.git",
     "plugins/meta-npm": "git@github.com:mateodelnorte/meta-npm.git",
     "plugins/meta-gitbook": "git@github.com:mateodelnorte/meta-gitbook.git",
