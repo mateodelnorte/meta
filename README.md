@@ -117,11 +117,13 @@ The best way to get started is to do the following:
 npm i -g meta
 meta git clone git@github.com:mateodelnorte/meta.git
 cd ./meta
+npm install
 meta npm install
 meta npm link --all
+npm link
 ```
 
-This will clone the meta project, `meta`, enter the directory, and then use `meta` to perform `npm install` and `npm link --all` in each directory listed in `projects` of the `.meta` JSON configuration file.
+This will clone the meta project, `meta`, enter the directory, and then use `meta` to perform `npm install`, `npm link --all` in each directory listed in `projects` of the `.meta` JSON configuration file, and link meta itself to be used as a global command.
 
 You can then write your command and test using `./bin/meta git gh [subcommand]`. 
 
@@ -129,8 +131,18 @@ You can run the above as a single command:
 ```
 meta git clone git@github.com:mateodelnorte/meta.git && cd ./meta && npm i && meta npm install && meta npm link --all && npm link
 ```
-
-
-
-
+Yarn lovers can do the same: 
+```
+npm i -g meta
+meta git clone git@github.com:mateodelnorte/meta.git
+cd ./meta
+yarn
+meta yarn install
+meta yarn link --all
+yarn link
+```
+Or
+```
+meta git clone git@github.com:mateodelnorte/meta.git && cd ./meta && yarn && meta yarn install && meta yarn link --all && yarn link
+```
 See discussion [here](https://github.com/mateodelnorte/meta/issues/8) for more details
