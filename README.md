@@ -98,3 +98,14 @@ all functionality comes from plugins.
 Want to add functionality to run against your entire system, composed of many repos, all 
 at once? Write a plugin! Plugins follow the git-subcommand pattern of commander.js and implement a single index.js function 
 to apply their top level menu to the bare meta command. 
+
+### Available Plugins
+
+
+* [meta-init](https://github.com/mateodelnorte/meta-init)
+* [meta-project](https://github.com/mateodelnorte/meta-project)
+* [meta-git](https://github.com/mateodelnorte/meta-git)
+* [meta-exec](https://github.com/mateodelnorte/meta-exec)
+* [meta-gh](https://github.com/mateodelnorte/meta-gh)
+* [meta-npm](https://github.com/mateodelnorte/meta-npm)
+* [meta-yarn](https://github.com/mateodelnorte/meta-yarn)
