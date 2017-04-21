@@ -101,11 +101,36 @@ to apply their top level menu to the bare meta command.
 
 ### Available Plugins
 
+* (meta-init)[https://github.com/mateodelnorte/meta-init]
+* (meta-project)[https://github.com/mateodelnorte/meta-project]
+* (meta-git)[https://github.com/mateodelnorte/meta-git]
+* (meta-exec)[https://github.com/mateodelnorte/meta-exec]
+* (meta-gh)[https://github.com/mateodelnorte/meta-gh]
+* (meta-npm)[https://github.com/mateodelnorte/meta-npm]
+* (meta-yarn)[https://github.com/mateodelnorte/meta-yarn]
 
-* [meta-init](https://github.com/mateodelnorte/meta-init)
-* [meta-project](https://github.com/mateodelnorte/meta-project)
-* [meta-git](https://github.com/mateodelnorte/meta-git)
-* [meta-exec](https://github.com/mateodelnorte/meta-exec)
-* [meta-gh](https://github.com/mateodelnorte/meta-gh)
-* [meta-npm](https://github.com/mateodelnorte/meta-npm)
-* [meta-yarn](https://github.com/mateodelnorte/meta-yarn)
+## Developing meta locally
+
+The best way to get started is to do the following:
+
+```
+npm i -g meta
+meta git clone git@github.com:mateodelnorte/meta.git
+cd ./meta
+meta npm install
+meta npm link --all
+```
+
+This will clone the meta project, `meta`, enter the directory, and then use `meta` to perform `npm install` and `npm link --all` in each directory listed in `projects` of the `.meta` JSON configuration file.
+
+You can then write your command and test using `./bin/meta git gh [subcommand]`. 
+
+You can run the above as a single command:
+```
+meta git clone git@github.com:mateodelnorte/meta.git && cd ./meta && npm i && meta npm install && meta npm link --all && npm link
+```
+
+
+
+
+See discussion [here](https://github.com/mateodelnorte/meta/issues/8) for more details
