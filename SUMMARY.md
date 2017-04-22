@@ -8,7 +8,7 @@
 
 * Plugins
 
-  * [loop-things](https://github.com/mateodelnorte/loop-things)
+  * [loop](https://github.com/mateodelnorte/loop)
   * [meta-docker](https://github.com/mateodelnorte/meta-docker)
   * [meta-exec](https://github.com/mateodelnorte/meta-exec)
   * [meta-git](https://github.com/mateodelnorte/meta-git)
