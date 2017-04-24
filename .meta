@@ -15,6 +15,8 @@
     "plugins/meta-project": "git@github.com:mateodelnorte/meta-project.git",
     "plugins/meta-npm": "git@github.com:mateodelnorte/meta-npm.git",
     "plugins/meta-yarn": "git@github.com:mateodelnorte/meta-yarn.git",
-    "plugins/meta-gh": "git@github.com:mateodelnorte/meta-gh.git"
+    "plugins/meta-gh": "git@github.com:mateodelnorte/meta-gh.git",
+    "templates/meta-plugin": "git@github.com:patrickleet/meta-template-meta-plugin.git",
+    "plugins/meta-template": "git@github.com:patrickleet/meta-template.git"
   }
 }
