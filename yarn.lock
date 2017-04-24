@@ -203,9 +203,9 @@ find-file-recursively-up@0.0.0:
   version "0.0.0"
   resolved "https://registry.yarnpkg.com/find-file-recursively-up/-/find-file-recursively-up-0.0.0.tgz#57e83234eb76e43b8024b7d77b99dc94987bd244"
 
-find-module-bin@0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/find-module-bin/-/find-module-bin-0.0.2.tgz#99ef84fb548aedae3bfe4da14b61846cd9888666"
+find-module-bin@0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/find-module-bin/-/find-module-bin-0.0.1.tgz#e2bac0add80ec653077c2ac5ae2fc937c5c13bbb"
   dependencies:
     debug "^2.4.4"
     global-paths "^1.0.0"
