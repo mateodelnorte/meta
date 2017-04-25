@@ -108,6 +108,11 @@ to apply their top level menu to the bare meta command.
 * (meta-gh)[https://github.com/mateodelnorte/meta-gh]
 * (meta-npm)[https://github.com/mateodelnorte/meta-npm]
 * (meta-yarn)[https://github.com/mateodelnorte/meta-yarn]
+* (meta-template)[https://github.com/patrickleet/meta-template]
+
+### Available Templates
+
+* (meta-plugin)[https://github.com/patrickleet/meta-template-meta-plugin]
 
 ## Developing meta locally
 
