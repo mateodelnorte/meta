@@ -15,8 +15,8 @@
     "plugins/meta-loop": "git@github.com:mateodelnorte/meta-loop.git",
     "plugins/meta-npm": "git@github.com:mateodelnorte/meta-npm.git",
     "plugins/meta-project": "git@github.com:mateodelnorte/meta-project.git",
-    "plugins/meta-template": "git@github.com:patrickleet/meta-template.git"
+    "plugins/meta-template": "git@github.com:patrickleet/meta-template.git",
     "plugins/meta-yarn": "git@github.com:mateodelnorte/meta-yarn.git",
-    "templates/meta-plugin": "git@github.com:patrickleet/meta-template-meta-plugin.git",
+    "templates/meta-plugin": "git@github.com:patrickleet/meta-template-meta-plugin.git"
   }
 }
