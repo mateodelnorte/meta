@@ -6,6 +6,7 @@
     "node_modules"
   ],
   "projects": {
+    "plugins/get-meta-file": "git@github.com:mateodelnorte/get-meta-file.git",
     "plugins/loop": "git@github.com:mateodelnorte/loop.git",
     "plugins/meta-docker": "git@github.com:mateodelnorte/meta-docker.git",
     "plugins/meta-exec": "git@github.com:mateodelnorte/meta-exec.git",
