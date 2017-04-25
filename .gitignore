@@ -4,3 +4,4 @@ npm-debug.log
 plugins
 templates/meta-plugin
 plugins/get-meta-file
+templates/servicebus-microservice

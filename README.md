@@ -113,6 +113,7 @@ to apply their top level menu to the bare meta command.
 ### Available Templates
 
 * (meta-plugin)[https://github.com/patrickleet/meta-template-meta-plugin]
+* (servicebus-microservice)[https://github.com/patrickleet/meta-template-servicebus-microservice]
 
 ## Developing meta locally
 
