@@ -6,7 +6,7 @@ meta is powered by plugins that wrap common commands, letting you execute them a
 
 # getting started
 
-# `meta init` & `meta project add`
+### `meta init` & `meta project add`
 
 To create a new meta project: 
 
