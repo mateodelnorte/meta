@@ -1,103 +1,80 @@
 # meta
 
-A tool for managing multi-project systems and libraries. Why choose between a monorepo and many repos, when you can have a meta repo?
+meta is a tool for managing multi-project systems and libraries. It answers the conundrum of choosing between a mono repo or many repos by saying "both", with a meta repo!
 
-Meta wraps git and other commands so you can easily execute a single command on all your projects at once, like doing a `git checkout -b feature/new-branch` on 30 repos at once. 
+meta is powered by plugins that wrap common commands, letting you execute them against some or all of the repos in your solution at once. meta is built on [loop](https://github.com/mateodelnorte/loop), and as such inherits loops ability to easily target a particular set of directories for executing a common command. 
 
-## benefits
+# getting started
+
+# `meta init` & `meta project add`
+
+To create a new meta project: 
+
+ 1. create a new directory for your meta project `mkdir my-meta-repo`
+ 2. initialize a new git repository in your new dir: `cd my-meta-repo && git init`
+ 3. initialize your new repository as a meta repo: `meta init`
+
+meta will have created a .meta file to hold references to any child repositories you add. 
+
+ 4. to add new projects, use `meta project add [folder] [repo url]`
+
+for each project added, meta will update your .gitignore file and the .meta file with references to the new child repo
+
+ [![asciicast](https://asciinema.org/a/d3nnfgv3n0vj2omzsl33l8um6.png)](https://asciinema.org/a/d3nnfgv3n0vj2omzsl33l8um6)
+
+### `meta git clone` 
+
+To clone an existing meta repo, you need only execute `meta git clone [meta repo url]`. meta will clone your meta repo and all child repositories at once. 
+
+ [![asciicast](https://asciinema.org/a/2rkev7pu41cv51a0bajwnxu7s.png)](https://asciinema.org/a/2rkev7pu41cv51a0bajwnxu7s)
+
+# working with meta
+
+Because meta plugins wrap common commands, you shouldn't have much new syntax to memorize for some crazy new utilities nobody knows about. For instance, if you want to check the `git status` of all your repositories at once, you can just type `meta git status`: 
+
+ [![asciicast](https://asciinema.org/a/83lg1tvqz9gwynixq5nhwsm2k.png)](https://asciinema.org/a/83lg1tvqz9gwynixq5nhwsm2k)
+
+View what branches exist on all your repos with `meta git branch`: 
+
+ [![asciicast](https://asciinema.org/a/5nt6i1dwm73igxtjgzifyqi2y.png)](https://asciinema.org/a/5nt6i1dwm73igxtjgzifyqi2y)
+
+Creating a new feature that cross-cuts a number of services, a site, and an API? Create new branches on all your repos at once with `meta git checkout -b [branch-name]`. Or, revert all modified files to their remote status with `meta git checkout .`: 
+
+ [![asciicast](https://asciinema.org/a/amhfxkwax50ef4ic4g1vqyifp.png)](https://asciinema.org/a/amhfxkwax50ef4ic4g1vqyifp)
+
+Track your progress on all branches at once with `meta git status`:
+
+ [![asciicast](https://asciinema.org/a/83lg1tvqz9gwynixq5nhwsm2k.png)](https://asciinema.org/a/83lg1tvqz9gwynixq5nhwsm2k)
+
+Remove unwanted untracked files on all repos with `meta git clean -fd`: 
+
+ [![asciicast](https://asciinema.org/a/0s8f9wp49nfilzpub3tnf9shg.png)](https://asciinema.org/a/0s8f9wp49nfilzpub3tnf9shg)
+
+# really working with meta
+
+## plugins
+
+All meta functionality is contributed by plugins - node modules that begin with `meta-` and are either installed globally or in your meta repo's node_modules directory. We recommend you install them as devDependencies in your meta repo's package.json. Plugins add additional sub commands to meta, and can leverage [loop](https://github.com/mateodelnorte/loop) or [meta-loop](https://github.com/mateodelnorte/meta-loop) to easily execute a common command against your meta repo and all child repos. 
+
+Here's how easy it is to install `meta-npm` as a plugin, and gain the ability to `meta npm install` all your repos at once:
+
+  [![asciicast](https://asciinema.org/a/8iqph5ju6j00drxpknbj6lnm6.png)](https://asciinema.org/a/8iqph5ju6j00drxpknbj6lnm6)
+
+And if you prefer the speediness of yarn, try `meta-yarn` with `npm install --save-dave meta-yarn`:
+
+ [![asciicast](https://asciinema.org/a/agd362q71smyvblztr1kw07fy.png)](https://asciinema.org/a/agd362q71smyvblztr1kw07fy)
+
+## Why meta?
 
   - clone a many-project architecture in one line
   - give every engineer on your team the same project setup, regardless of where it's cloned
   - npm / yarn install against all your projects at once
-  - loop arbitrary commands to manage your projects
+  - execute arbitrary commands against many repos to manage your projects
   - super simple plugin architecture using commander.js
+  - easily wrap commands for working with any platform, not just Node!
   - meta repo keeps code in per project repos, benefiting deployment and reuse
-  - same tools you always use. no strange side effects of submodules or subtree
+  - use the same tools you always use. no strange side effects of git submodules or subtree
   - give different teams different slices of your architecture, with multiple metarepos!
-
-[![asciicast](https://asciinema.org/a/4e5oa02980izleujtrch6bary.png)](https://asciinema.org/a/4e5oa02980izleujtrch6bary)
-
-## Why meta?
-
-Most developers, at some point in their careers, work on what they later learn was a monolithic appication. And, typically, they walk
-away from that experience with a healthy motivation to never build or work on such an app again. 
-
-Long before the term 'microservices' got popular, people were building distributed systems. Those who learned to fear monolithic apps
-were building distributed systems with many services, where each service does one thing and does it well. Often, by making a service do 
-one thing – and only one thing – the complexity of that service would be dramatically reduced, compared to something a bit more monolithic.
-But the cost of spreading your complexity out amongst simpler parts is to have a bit of complexity in the architecture, itself. The trees
-are quite easy to see, but the forest starts out a bit fuzzy.
-
-Meta is a plugin-powered tool whose purpose is to make building distributed systems easier. It does so by providing commands which can be 
-executed against any number of projects in your solution at once. Need to create a branch on five projects at once, commit, and push? start 
-with `meta git checkout -b feature/my-new-branch --include-only project1, project2, project3`. 
-
-## Why not X?
-
-Meta was created after years of using an alternative tool, gitslave, to manage very large systems. Gitslave works in much the same way as meta-git's commands. But, 
-gitslave is minimally supported and clunky. Meta started as an attempt to replace gitslave, but quickly turned into something more than
-just git commands. 
-
-Git submodules and git subtree both offer the ability to load child repositories under a parent, but both too have some clunkiness around 
-ensuring updates end up in the correct repository, or that updates indeed make it into yours. 
-
-Lerna is the newest kid on the block. Lerna hears the question "Mono repo or many repos?" and says mono. Unfortunately, despite their benefits, 
-monorepos have problems of their own. Eventually, as systems get large enough, different services become owned by different teams and individuals. 
-Over time, it makes less sense to have a single repository define the entire system that runs an organization. Eventually, teams would prefer to 
-run slices of that system. Lerna does not have this capability, but meta does. Meta can allow finer grained access permissions to different
-parts of your code base. And, with some fancy tricks, meta can still provide all the benefits of a metarepo (think a special branch that contains
-you child repository files, for the purpose of continuous integration).
-
-## Sample Usage
-
-Meta is a work in progress. So far just `git clone`, `git status`, and `git checkout` are implemented: 
-```
-➜  meta
-
-  Usage: meta [options] [command]
-
-
-  Commands:
-
-    exec        run commands against your meta and child repositories
-    git         manage your meta repo and child git repositories
-    init        initialize a new meta repo
-    npm         run npm commands against your meta and child repositories
-    project     add & remove child repositories
-    help [cmd]  display help for [cmd]
-
-  Options:
-
-    -h, --help     output usage information
-    -V, --version  output the version number
-```
-```
-➜  meta git
-
-  Usage: meta-git [options] [command]
-
-
-  Commands:
-
-    checkout    checkout a common branch across all repositories
-    clone       clone meta and child repositories
-    status      git status of meta and child repositories
-    help [cmd]  display help for [cmd]
-
-  Options:
-
-    -h, --help  output usage information
-```
-
-## Plugin Architecture
-
-The git functionality above is provided to meta via the [meta-git](https://github.com/mateodelnorte/meta-git) plugin. 
-Meta, itself, actually only implements functionality to load plugins, provide tab completion, and render help text. As such,
-all functionality comes from plugins. 
-
-Want to add functionality to run against your entire system, composed of many repos, all 
-at once? Write a plugin! Plugins follow the git-subcommand pattern of commander.js and implement a single index.js function 
-to apply their top level menu to the bare meta command. 
 
 ### Available Plugins
 
@@ -114,7 +91,7 @@ to apply their top level menu to the bare meta command.
 
 * (meta-plugin)[https://github.com/patrickleet/meta-template-meta-plugin]
 
-## Developing meta locally
+## Want to help develop meta locally?
 
 The best way to get started is to do the following:
 
