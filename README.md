@@ -6,7 +6,7 @@ meta is powered by plugins that wrap common commands, letting you execute them a
 
 # getting started
 
-### installing
+## installing
 
 `npm i -g meta` will install a `meta` command on your system.
 
