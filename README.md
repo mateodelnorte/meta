@@ -6,6 +6,10 @@ meta is powered by plugins that wrap common commands, letting you execute them a
 
 # getting started
 
+## installing
+
+`npm i -g meta` will install a `meta` command on your system.
+
 ### `meta init` & `meta project add`
 
 To create a new meta project: 
