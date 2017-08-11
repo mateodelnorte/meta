@@ -24,9 +24,7 @@ debug(`registering plugins: ${dirs}`);
 dirs.forEach(registerPlugin.bind(this, program));
 
 if ( ! inMetaDir) {
-  console.error(chalk.red('\nno .meta file detected. meta must be run from within a meta repo. are you in a meta repo?'));
-  console.log(program.help())
-  process.exit(1);
+  console.error(chalk.red('\nno .meta file detected. meta must be run from within a meta repo. are you in a meta repo?\n'));
 }
 
 const metagit = require('meta-git');
