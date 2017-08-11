@@ -2,5 +2,4 @@ _book
 node_modules
 npm-debug.log
 plugins
-templates/meta-plugin
-plugins/get-meta-file
+templates
