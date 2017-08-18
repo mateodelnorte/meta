@@ -12,8 +12,6 @@ process.on('uncaughtException', (err) => {
   process.exit(1);
 });
 
-const inMetaDir = fs.existsSync(path.join(process.cwd(), '.meta'));
-
 const dirs = listDirectories(path.join(path.resolve(__dirname), '..', 'node_modules'));
 
 const program = require('commander')
@@ -23,13 +21,12 @@ debug(`registering plugins: ${dirs}`);
 
 dirs.forEach(registerPlugin.bind(this, program));
 
-if ( ! inMetaDir) {
-  console.error(chalk.red('\nno .meta file detected. meta must be run from within a meta repo. are you in a meta repo?\n'));
+const inMetaDir = fs.existsSync(path.join(process.cwd(), '.meta'));
+
+if ( inMetaDir) {
+  const metagit = require('meta-git');  
+  metagit.update({ dryRun: true });
 }
-
-const metagit = require('meta-git');
-
-metagit.update({ dryRun: true });
 
 program
   .parse(process.argv);
