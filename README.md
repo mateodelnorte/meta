@@ -82,18 +82,18 @@ And if you prefer the speediness of yarn, try `meta-yarn` with `npm install --sa
 
 ### Available Plugins
 
-* (meta-init)[https://github.com/mateodelnorte/meta-init]
-* (meta-project)[https://github.com/mateodelnorte/meta-project]
-* (meta-git)[https://github.com/mateodelnorte/meta-git]
-* (meta-exec)[https://github.com/mateodelnorte/meta-exec]
-* (meta-gh)[https://github.com/mateodelnorte/meta-gh]
-* (meta-npm)[https://github.com/mateodelnorte/meta-npm]
-* (meta-yarn)[https://github.com/mateodelnorte/meta-yarn]
-* (meta-template)[https://github.com/patrickleet/meta-template]
+* [meta-init](https://github.com/mateodelnorte/meta-init)
+* [meta-project](https://github.com/mateodelnorte/meta-project)
+* [meta-git](https://github.com/mateodelnorte/meta-git)
+* [meta-exec](https://github.com/mateodelnorte/meta-exec)
+* [meta-gh](https://github.com/mateodelnorte/meta-gh)
+* [meta-npm](https://github.com/mateodelnorte/meta-npm)
+* [meta-yarn](https://github.com/mateodelnorte/meta-yarn)
+* [meta-template](https://github.com/patrickleet/meta-template)
 
 ### Available Templates
 
-* (meta-plugin)[https://github.com/patrickleet/meta-template-meta-plugin]
+* [meta-plugin](https://github.com/patrickleet/meta-template-meta-plugin)
 
 ## Want to help develop meta locally?
 
