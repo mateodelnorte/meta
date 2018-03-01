@@ -64,7 +64,7 @@ Here's how easy it is to install `meta-npm` as a plugin, and gain the ability to
 
   [![asciicast](https://asciinema.org/a/8iqph5ju6j00drxpknbj6lnm6.png)](https://asciinema.org/a/8iqph5ju6j00drxpknbj6lnm6)
 
-And if you prefer the speediness of yarn, try `meta-yarn` with `npm install --save-dave meta-yarn`:
+And if you prefer the speediness of yarn, try `meta-yarn` with `npm install --save-dev meta-yarn`:
 
  [![asciicast](https://asciinema.org/a/agd362q71smyvblztr1kw07fy.png)](https://asciinema.org/a/agd362q71smyvblztr1kw07fy)
 
