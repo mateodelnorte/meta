@@ -9,11 +9,11 @@
 * Plugins
 
   * [loop](https://github.com/mateodelnorte/loop)
-  * [meta-docker](https://github.com/mateodelnorte/meta-docker)
   * [meta-exec](https://github.com/mateodelnorte/meta-exec)
   * [meta-git](https://github.com/mateodelnorte/meta-git)
   * [meta-gitbook](https://github.com/mateodelnorte/meta-gitbook)
   * [meta-init](https://github.com/mateodelnorte/meta-init)
+  * [meta-loop](https://github.com/mateodelnorte/meta-loop)
   * [meta-npm](https://github.com/mateodelnorte/meta-npm)
   * [meta-project](https://github.com/mateodelnorte/meta-project)
   * [meta-yarn](https://github.com/mateodelnorte/meta-yarn)

@@ -87,6 +87,7 @@ And if you prefer the speediness of yarn, try `meta-yarn` with `npm install --sa
 * [meta-git](https://github.com/mateodelnorte/meta-git)
 * [meta-exec](https://github.com/mateodelnorte/meta-exec)
 * [meta-gh](https://github.com/mateodelnorte/meta-gh)
+* [meta-loop](https://github.com/mateodelnorte/meta-loop)
 * [meta-npm](https://github.com/mateodelnorte/meta-npm)
 * [meta-yarn](https://github.com/mateodelnorte/meta-yarn)
 * [meta-template](https://github.com/patrickleet/meta-template)

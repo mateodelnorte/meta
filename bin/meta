@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 const chalk = require('chalk');
-const debug = require('debug')('@essential-projects/meta');
+const debug = require('debug')('meta');
 const fs = require('fs');
 const listDirectories = require('../lib/listDirectories');
 const path = require('path');

@@ -1,4 +1,0 @@
-*.
-!./plugins/**/*
-!README.md
-!SUMMARY.md
