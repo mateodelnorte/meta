@@ -1,6 +1,6 @@
 {
   "name": "meta",
-  "version": "1.0.57",
+  "version": "1.0.58",
   "description": "tool for turning many repos into a meta repo. why choose many repos or a monolithic repo, when you can have both with a meta repo?",
   "main": "./bin/meta",
   "bin": {
@@ -14,7 +14,7 @@
     "clean-global-meta-commands": "rm -f `npm config get prefix`/bin/*meta*",
     "clean-global-meta-installs": "rm -rf `npm config get prefix`/lib/node_modules/*meta*",
     "completion": "tabtab install",
-    "postinstall": "meta-npm install --exclude meta",
+    "meta-install": "meta-npm install --exclude meta",
     "meta-link": "meta-npm link",
     "meta-link-all": "meta-npm link --all",
     "meta-link-global": "meta-npm link && npm link",
