@@ -133,3 +133,8 @@ Or
 meta git clone git@github.com:mateodelnorte/meta.git && cd ./meta && yarn && meta yarn install && meta yarn link --all && yarn link
 ```
 See discussion [here](https://github.com/mateodelnorte/meta/issues/8) for more details
+
+## More resources
+
+* [Mono-repo or multi-repo? Why choose one, when you can have both? by @patrickleet](https://medium.com/@patrickleet/mono-repo-or-multi-repo-why-choose-one-when-you-can-have-both-e9c77bd0c668)
+* [Developing a plugin for meta by @patrickleet](https://medium.com/@patrickleet/developing-a-plugin-for-meta-bd2e9c39882d)
