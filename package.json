@@ -1,6 +1,6 @@
 {
   "name": "meta",
-  "version": "1.0.61",
+  "version": "1.0.62",
   "description": "tool for turning many repos into a meta repo. why choose many repos or a monolithic repo, when you can have both with a meta repo?",
   "main": "./bin/meta",
   "bin": {
@@ -58,9 +58,9 @@
     "tabtab": "^2.2.1"
   },
   "devDependencies": {
+    "apply-template": "^3.0.4",
     "meta-gh": "^0.0.5",
     "meta-npm": "0.0.28",
-    "meta-template": "^2.0.3",
     "meta-yarn": "^0.0.5"
   }
 }
