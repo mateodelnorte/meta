@@ -8,7 +8,6 @@
   "projects": {
     "plugins/get-meta-file": "git@github.com:mateodelnorte/get-meta-file.git",
     "plugins/loop": "git@github.com:mateodelnorte/loop.git",
-    "plugins/meta-docs": "git@github.com:mateodelnorte/meta-docs.git",
     "plugins/meta-exec": "git@github.com:mateodelnorte/meta-exec.git",
     "plugins/meta-gh": "git@github.com:mateodelnorte/meta-gh.git",
     "plugins/meta-git": "git@github.com:mateodelnorte/meta-git.git",
