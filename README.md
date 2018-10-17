@@ -54,6 +54,18 @@ Remove unwanted untracked files on all repos with `meta git clean -fd`:
 
  [![asciicast](https://asciinema.org/a/0s8f9wp49nfilzpub3tnf9shg.png)](https://asciinema.org/a/0s8f9wp49nfilzpub3tnf9shg)
 
+## Configuration
+
+You can configure meta with the `meta-config` plugin. This provides options
+for other plugins.
+
+Current options:
+
+```bash
+  # Skip the confirmation dialog when running inside a subfolder / subproject
+  meta config useParentMeta true
+```
+
 # really working with meta
 
 ## plugins
