@@ -92,6 +92,10 @@ And if you prefer the speediness of yarn, try `meta-yarn` with `npm install --sa
 * [meta-yarn](https://github.com/mateodelnorte/meta-yarn)
 * [meta-template](https://github.com/patrickleet/meta-template)
 
+### Third-party Plugins
+
+* [meta-bump](https://github.com/patrykzurawik/meta-bump)
+
 ### Available Templates
 
 * [meta-plugin](https://github.com/patrickleet/meta-template-meta-plugin)
