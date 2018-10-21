@@ -6,13 +6,16 @@ const fs = require('fs');
 const listDirectories = require('../lib/listDirectories');
 const path = require('path');
 const registerPlugin = require('../lib/registerPlugin');
+const { execSync } = require('child_process');
 
 process.on('uncaughtException', (err) => {
   console.error(err);
   process.exit(1);
 });
 
-const dirs = listDirectories(path.join(path.resolve(__dirname), '..', 'node_modules'));
+const globalDirPrefix = execSync('npm config get prefix').toString().trim();
+const globalDir = `${globalDirPrefix}/lib/node_modules`;
+const dirs = listDirectories(globalDir);
 
 const program = require('commander')
   .version(require('../package.json').version);
@@ -24,7 +27,7 @@ dirs.forEach(registerPlugin.bind(this, program));
 const inMetaDir = fs.existsSync(path.join(process.cwd(), '.meta'));
 
 if ( inMetaDir) {
-  const metagit = require('meta-git');  
+  const metagit = require('meta-git');
   metagit.update({ dryRun: true });
 }
 
