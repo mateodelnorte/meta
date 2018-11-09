@@ -18,7 +18,7 @@
     "plugins/meta-template": "git@github.com:patrickleet/meta-template.git",
     "plugins/meta-yarn": "git@github.com:mateodelnorte/meta-yarn.git",
     "plugins/symlink-meta-dependencies": "git@github.com:mateodelnorte/symlink-meta-dependencies.git",
-    "plugins/meta-config": "git@github.com:dorner/meta-config.git"
+    "plugins/meta-configure": "git@github.com:dorner/meta-configure.git"
   },
   "templates": {
     "templates/meta-plugin": "git@github.com:patrickleet/meta-template-meta-plugin.git"

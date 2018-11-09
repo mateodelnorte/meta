@@ -56,7 +56,7 @@ Remove unwanted untracked files on all repos with `meta git clean -fd`:
 
 ## Configuration
 
-You can configure meta with the `meta-config` plugin. This provides options
+You can configure meta with the `meta-configure` plugin. This provides options
 for other plugins.
 
 Current options:
