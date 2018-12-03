@@ -66,7 +66,7 @@ Here's how easy it is to install `meta-npm` as a plugin, and gain the ability to
 
 And if you prefer the speediness of yarn, try `meta-yarn` with `npm install --save-dev meta-yarn`:
 
- [![asciicast](https://asciinema.org/a/agd362q71smyvblztr1kw07fy.png)](https://asciinema.org/a/agd362q71smyvblztr1kw07fy)
+ [![asciicast](https://asciinema.org/a/agd362q71smyvblztr1kw07fy.png)](https://asciinema.org/a/agd362q71smyvblztr1kw07fy) [![Greenkeeper badge](https://badges.greenkeeper.io/mateodelnorte/meta.svg)](https://greenkeeper.io/)
 
 ## Why meta?
 
