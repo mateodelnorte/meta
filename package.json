@@ -30,7 +30,7 @@
     "meta-link-all": "meta-npm link --all",
     "meta-link-global": "meta-npm link && npm link",
     "meta-link-all-global": "meta-npm link --all && npm link",
-    "test": "jest --coverage",
+    "test": "jest --coverage lib",
     "semantic-release": "semantic-release",
     "travis-deploy-once": "travis-deploy-once"
   },
