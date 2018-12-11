@@ -9,7 +9,7 @@ node_js:
   - 10
   - 11
 before_install:
-  - npm install -g greenkeeper-lockfile semantic-release codecov
+  - npm install -g greenkeeper-lockfile semantic-release codecov travis-deploy-once
 install:
   - npm install
 before_script: greenkeeper-lockfile-update
@@ -18,7 +18,7 @@ script:
   - codecov
 after_script: greenkeeper-lockfile-upload
 after_success:
-  - semantic-release
+  - travis-deploy-once "semantic-release"
 branches:
   except:
     - "/^v\\d+\\.\\d+\\.\\d+$/"
