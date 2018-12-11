@@ -30,7 +30,7 @@ exports.run = (cwd, argv) => {
   corePlugins.forEach((corePluginPath, name) => {
     const userPluginPath = userPlugins.get(name);
     if (userPluginPath) {
-      debug(`skipping plugin '${corePluginPath}' because '${userPluginPath}' is already in use`) // prettier-ignore
+      debug(`Skipping core plugin: '${name}'\n  because '${userPluginPath}' is already in use`) // prettier-ignore
     } else {
       registerPlugin(program, corePluginPath);
     }
