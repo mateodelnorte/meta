@@ -6,6 +6,7 @@
     "meta": "./bin/meta"
   },
   "scripts": {
+    "commit": "git-cz",
     "clean": "meta-npm clean",
     "clean-global-all": "npm run clean-global-loop-commands && npm run clean-global-loop-installs && npm run clean-global-meta-commands && npm run clean-global-meta-installs",
     "clean-global-loop-commands": "rm -f `npm config get prefix`/bin/*loop*",
@@ -58,11 +59,17 @@
   },
   "devDependencies": {
     "apply-template": "^3.0.4",
-    "jest": "^23.6.0",
     "meta-gh": "^0.0.5",
     "meta-npm": "0.0.28",
     "meta-yarn": "^0.0.5",
     "prettier": "^1.15.3",
+    "commitizen": "^3.0.5",
+    "cz-conventional-changelog": "^2.1.0",
+    "jest": "^23.6.0",
+    "meta-gh": "^0.0.5",
+    "meta-npm": "0.0.28",
+    "meta-yarn": "^0.0.5",
+    "semantic-release-cli": "^4.0.12",
     "travis-deploy-once": "^5.0.9"
   }
 }
