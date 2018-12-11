@@ -67,7 +67,7 @@
     "meta-init": "0.0.5",
     "meta-loop": "0.0.8",
     "meta-project": "0.0.4",
-    "tabtab": "2.2.2"
+    "tabtab": "3.0.2"
   },
   "devDependencies": {
     "apply-template": "4.0.1",
