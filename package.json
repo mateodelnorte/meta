@@ -18,7 +18,7 @@
     "meta-link-all": "meta-npm link --all",
     "meta-link-global": "meta-npm link && npm link",
     "meta-link-all-global": "meta-npm link --all && npm link",
-    "test": "echo \"No tests.\"",
+    "test": "jest --coverage",
     "semantic-release": "semantic-release",
     "travis-deploy-once": "travis-deploy-once"
   },
@@ -58,6 +58,7 @@
   },
   "devDependencies": {
     "apply-template": "^3.0.4",
+    "jest": "^23.6.0",
     "meta-gh": "^0.0.5",
     "meta-npm": "0.0.28",
     "meta-yarn": "^0.0.5",
