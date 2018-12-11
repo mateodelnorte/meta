@@ -5,6 +5,17 @@
   "bin": {
     "meta": "./bin/meta"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "git add"
+    ]
+  },
   "scripts": {
     "commit": "git-cz",
     "clean": "meta-npm clean",
@@ -51,6 +62,7 @@
   "dependencies": {
     "commander": "mateodelnorte/commander.js",
     "debug": "^2.3.3",
+    "husky": "^1.2.0",
     "meta-git": "^0.0.33",
     "meta-init": "^0.0.5",
     "meta-loop": "^0.0.8",
@@ -62,6 +74,7 @@
     "commitizen": "^3.0.5",
     "cz-conventional-changelog": "^2.1.0",
     "jest": "^23.6.0",
+    "lint-staged": "^8.1.0",
     "meta-gh": "^0.0.5",
     "meta-npm": "0.0.28",
     "meta-yarn": "^0.0.5",
