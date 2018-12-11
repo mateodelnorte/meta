@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`findPlugins finds non-scoped plugins 1`] = `
+Map {
+  "meta-foo" => "/node_modules/meta-foo",
+}
+`;
+
+exports[`findPlugins finds scoped plugins 1`] = `
+Map {
+  "meta-foo" => "/node_modules/@foo/meta-foo",
+}
+`;
+
+exports[`findPlugins ignores non-plugins 1`] = `Map {}`;
+
+exports[`findPlugins searches every global directory 1`] = `
+Map {
+  "meta-foo" => "/foo/meta-foo",
+  "meta-bar" => "/bar/@foo/meta-bar",
+}
+`;
+
+exports[`findPlugins searches every parent directory 1`] = `
+Map {
+  "meta-3" => "/1/2/3/node_modules/meta-3",
+  "meta-2" => "/1/2/node_modules/meta-2",
+  "meta-1" => "/1/node_modules/meta-1",
+  "meta-0" => "/node_modules/meta-0",
+}
+`;
+
+exports[`findPlugins skips plugins whose name is already in use 1`] = `
+Map {
+  "meta-foo" => "/node_modules/@foo/meta-foo",
+}
+`;
+
+exports[`findPlugins tolerates missing "node_modules" when searching parent directories 1`] = `
+Map {
+  "meta-3" => "/1/2/3/node_modules/meta-3",
+  "meta-1" => "/1/node_modules/meta-1",
+}
+`;

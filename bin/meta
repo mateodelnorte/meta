@@ -1,32 +1,8 @@
 #!/usr/bin/env node
 
-const chalk = require('chalk');
-const debug = require('debug')('meta');
-const fs = require('fs');
-const listDirectories = require('../lib/listDirectories');
-const path = require('path');
-const registerPlugin = require('../lib/registerPlugin');
-
-process.on('uncaughtException', (err) => {
+process.on('uncaughtException', err => {
   console.error(err);
   process.exit(1);
 });
 
-const dirs = listDirectories(path.join(path.resolve(__dirname), '..', 'node_modules'));
-
-const program = require('commander')
-  .version(require('../package.json').version);
-
-debug(`registering plugins: ${dirs}`);
-
-dirs.forEach(registerPlugin.bind(this, program));
-
-const inMetaDir = fs.existsSync(path.join(process.cwd(), '.meta'));
-
-if ( inMetaDir) {
-  const metagit = require('meta-git');  
-  metagit.update({ dryRun: true });
-}
-
-program
-  .parse(process.argv);
+require('..').run(process.cwd(), process.argv);
