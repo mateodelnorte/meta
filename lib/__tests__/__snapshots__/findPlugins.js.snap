@@ -24,12 +24,21 @@ Map {
 exports[`findPlugins searches every parent directory 1`] = `
 Map {
   "meta-3" => "/1/2/3/node_modules/meta-3",
+  "meta-2" => "/1/2/node_modules/meta-2",
   "meta-1" => "/1/node_modules/meta-1",
+  "meta-0" => "/node_modules/meta-0",
 }
 `;
 
 exports[`findPlugins skips plugins whose name is already in use 1`] = `
 Map {
   "meta-foo" => "/node_modules/@foo/meta-foo",
+}
+`;
+
+exports[`findPlugins tolerates missing "node_modules" when searching parent directories 1`] = `
+Map {
+  "meta-3" => "/1/2/3/node_modules/meta-3",
+  "meta-1" => "/1/node_modules/meta-1",
 }
 `;
