@@ -7,6 +7,7 @@
     "meta": "./bin/meta"
   },
   "scripts": {
+    "commit": "git-cz",
     "clean": "meta-npm clean",
     "clean-global-all": "npm run clean-global-loop-commands && npm run clean-global-loop-installs && npm run clean-global-meta-commands && npm run clean-global-meta-installs",
     "clean-global-loop-commands": "rm -f `npm config get prefix`/bin/*loop*",
@@ -19,9 +20,7 @@
     "meta-link-all": "meta-npm link --all",
     "meta-link-global": "meta-npm link && npm link",
     "meta-link-all-global": "meta-npm link --all && npm link",
-    "test": "echo \"No tests.\"",
-    "semantic-release": "semantic-release",
-    "travis-deploy-once": "travis-deploy-once"
+    "test": "echo \"No tests.\""
   },
   "repository": {
     "type": "git",
@@ -65,9 +64,11 @@
   },
   "devDependencies": {
     "apply-template": "^3.0.4",
+    "commitizen": "^3.0.5",
+    "cz-conventional-changelog": "^2.1.0",
     "meta-gh": "^0.0.5",
     "meta-npm": "0.0.28",
     "meta-yarn": "^0.0.5",
-    "travis-deploy-once": "^5.0.9"
+    "semantic-release-cli": "^4.0.12"
   }
 }

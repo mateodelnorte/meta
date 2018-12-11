@@ -1,7 +1,7 @@
 language: node_js
 cache:
   directories:
-    - "~/.npm"
+    - ~/.npm
 notifications:
   email: false
 node_js:
@@ -9,17 +9,16 @@ node_js:
   - 10
   - 11
 before_install:
-  - npm install -g greenkeeper-lockfile@2
+  - npm install -g greenkeeper-lockfile semantic-release codecov
 install:
   - npm install
-  - npm install -g codecov
 before_script: greenkeeper-lockfile-update
 script:
   - npm run test
   - codecov
 after_script: greenkeeper-lockfile-upload
 after_success:
-  - npm run travis-deploy-once "npm run semantic-release"
+  - semantic-release
 branches:
   except:
     - "/^v\\d+\\.\\d+\\.\\d+$/"
