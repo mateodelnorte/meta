@@ -70,7 +70,7 @@
     "tabtab": "2.2.2"
   },
   "devDependencies": {
-    "apply-template": "3.1.0",
+    "apply-template": "4.0.1",
     "commitizen": "3.0.5",
     "cz-conventional-changelog": "2.1.0",
     "jest": "23.6.0",
