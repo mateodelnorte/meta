@@ -6159,6 +6159,13 @@ p-retry@^2.0.0:
   dependencies:
     retry "^0.12.0"
 
+p-retry@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/p-retry/-/p-retry-3.0.0.tgz#f1a09233417dd40b42a7a4a3ed0f4780f23b90d8"
+  integrity sha512-fAB7bebxaj8nylNAsxPNkwPZ/48bXFdFnWrz0v2sV+H5BsGfVL7Ap7KgONqy7rOK4ZI1I+SU+lmettO3hM+2HQ==
+  dependencies:
+    retry "^0.12.0"
+
 p-try@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/p-try/-/p-try-1.0.0.tgz#cbc79cdbaf8fd4228e13f621f2b1a237c1b207b3"
@@ -7868,10 +7875,10 @@ travis-ci@^2.1.1:
     request "^2.87.0"
     underscore.string "~2.2.0rc"
 
-travis-deploy-once@5.0.9:
-  version "5.0.9"
-  resolved "https://registry.yarnpkg.com/travis-deploy-once/-/travis-deploy-once-5.0.9.tgz#c5a2f639e17d8fd542f66d25ade126179d5e8acf"
-  integrity sha512-cyHFErzq0HTEGY29RAq1clqFdt/IkCrlcOmyM1cGoGnEyukrrFi1fpy6JH3Mlf+88XsFwvluqKVWzj2bdz3k8A==
+travis-deploy-once@5.0.10:
+  version "5.0.10"
+  resolved "https://registry.yarnpkg.com/travis-deploy-once/-/travis-deploy-once-5.0.10.tgz#b2950637ddbe906e545d8c3b7b388265938ee746"
+  integrity sha512-gkfBl/5+jgNs4N1q21TZ+TsA4beZYvIgucIrA1EDIoowsQLGDu0C1KrmE0BFiM34kXY9Dsx84V5/c5vjwOECLQ==
   dependencies:
     "@babel/core" "^7.0.0"
     "@babel/polyfill" "^7.0.0"
@@ -7880,7 +7887,7 @@ travis-deploy-once@5.0.9:
     chalk "^2.1.0"
     execa "^1.0.0"
     got "^9.1.0"
-    p-retry "^2.0.0"
+    p-retry "^3.0.0"
     semver "^5.4.1"
     update-notifier "^2.3.0"
     url-join "^4.0.0"
