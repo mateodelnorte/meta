@@ -1,5 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`findPlugins falls back to (npm root -g) when $NODE_PATH is empty 1`] = `
+Map {
+  "meta-1" => "/npm/root/meta-1",
+  "meta-2" => "/npm/root/@foo/meta-2",
+}
+`;
+
 exports[`findPlugins finds non-scoped plugins 1`] = `
 Map {
   "meta-foo" => "/node_modules/meta-foo",
