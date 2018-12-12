@@ -74,6 +74,6 @@
     "prettier": "1.15.3",
     "pretty-quick": "1.8.0",
     "semantic-release-cli": "4.0.13",
-    "travis-deploy-once": "5.0.9"
+    "travis-deploy-once": "5.0.10"
   }
 }
