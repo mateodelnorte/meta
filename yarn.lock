@@ -6159,6 +6159,13 @@ p-retry@^2.0.0:
   dependencies:
     retry "^0.12.0"
 
+p-retry@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/p-retry/-/p-retry-3.0.0.tgz#f1a09233417dd40b42a7a4a3ed0f4780f23b90d8"
+  integrity sha512-fAB7bebxaj8nylNAsxPNkwPZ/48bXFdFnWrz0v2sV+H5BsGfVL7Ap7KgONqy7rOK4ZI1I+SU+lmettO3hM+2HQ==
+  dependencies:
+    retry "^0.12.0"
+
 p-try@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/p-try/-/p-try-1.0.0.tgz#cbc79cdbaf8fd4228e13f621f2b1a237c1b207b3"
@@ -7088,10 +7095,10 @@ sax@^1.2.4:
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
   integrity sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==
 
-semantic-release-cli@4.0.12:
-  version "4.0.12"
-  resolved "https://registry.yarnpkg.com/semantic-release-cli/-/semantic-release-cli-4.0.12.tgz#b599107fcd31a979daee8497a4569d475ff82744"
-  integrity sha512-otns3jg88816jPq75W4Xhu/IxtzgU/e0cQpbCmsOOz/wulrHCaAxF9ba+BrGuXK2ED/k6Nd6Yagz29j96YvrKA==
+semantic-release-cli@4.0.13:
+  version "4.0.13"
+  resolved "https://registry.yarnpkg.com/semantic-release-cli/-/semantic-release-cli-4.0.13.tgz#267f33f34e698735580ffd5b883d7cd9b102c33e"
+  integrity sha512-iQqC7dZyF7dvebysMHDSL/wZZZmocJcVQB5YjtQKWzYmI+wd/pQ8XiyD4hhFJcmQKatzDKcHdIyFtdS0iax09w==
   dependencies:
     babel-polyfill "^6.26.0"
     babel-preset-env "^1.6.1"
@@ -7108,7 +7115,7 @@ semantic-release-cli@4.0.12:
     npm "^6.0.0"
     npm-profile "^4.0.1"
     npmlog "^4.0.0"
-    p-retry "^2.0.0"
+    p-retry "^3.0.0"
     parse-git-config "^3.0.0"
     parse-github-repo-url "^1.0.0"
     pify "^4.0.0"
