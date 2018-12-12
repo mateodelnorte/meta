@@ -61,7 +61,7 @@
   "homepage": "https://github.com/mateodelnorte/meta#readme",
   "dependencies": {
     "commander": "mateodelnorte/commander.js",
-    "debug": "2.6.9",
+    "debug": "4.1.0",
     "husky": "1.2.0",
     "meta-git": "0.0.33",
     "meta-init": "0.0.5",
