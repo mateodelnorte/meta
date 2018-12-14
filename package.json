@@ -73,7 +73,7 @@
     "meta-yarn": "0.0.5",
     "prettier": "1.15.3",
     "pretty-quick": "1.8.0",
-    "semantic-release-cli": "4.0.13",
+    "semantic-release-cli": "4.1.0",
     "travis-deploy-once": "5.0.10"
   }
 }
