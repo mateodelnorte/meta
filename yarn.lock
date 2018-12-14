@@ -6786,10 +6786,10 @@ sax@^1.2.4:
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
   integrity sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==
 
-semantic-release-cli@4.0.13:
-  version "4.0.13"
-  resolved "https://registry.yarnpkg.com/semantic-release-cli/-/semantic-release-cli-4.0.13.tgz#267f33f34e698735580ffd5b883d7cd9b102c33e"
-  integrity sha512-iQqC7dZyF7dvebysMHDSL/wZZZmocJcVQB5YjtQKWzYmI+wd/pQ8XiyD4hhFJcmQKatzDKcHdIyFtdS0iax09w==
+semantic-release-cli@4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/semantic-release-cli/-/semantic-release-cli-4.1.0.tgz#c8803567447e9c527661aeb623e10a9028956ef0"
+  integrity sha512-q1ycQZHettlOdO5jToRgU3bq5kyuZIfBHTR6gqO+lUMtwA+vA9tP4gcoCDaW1r1YmFIAcPMsnytbO/MsomTDig==
   dependencies:
     babel-polyfill "^6.26.0"
     babel-preset-env "^1.6.1"
