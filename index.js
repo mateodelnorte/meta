@@ -9,9 +9,12 @@ const registerPlugin = require('./lib/registerPlugin');
 
 // Plugins depended on by the `meta` package.
 const corePlugins = new Map();
-Object.keys(meta.dependencies).forEach(
-  name => /^meta-/.test(name) && corePlugins.set(name, require.resolve(name))
-);
+Object.keys(meta.dependencies).forEach(name => {
+  if (/^meta-/.test(name)) {
+    const packagePath = require.resolve(path.join(name, 'package.json'));
+    corePlugins.set(name, path.dirname(packagePath));
+  }
+});
 
 exports.version = meta.version;
 
