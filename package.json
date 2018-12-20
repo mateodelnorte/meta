@@ -54,13 +54,15 @@
   },
   "homepage": "https://github.com/mateodelnorte/meta#readme",
   "dependencies": {
+    "chalk": "^2.4.1",
     "commander": "mateodelnorte/commander.js",
     "debug": "4.1.0",
     "meta-git": "0.0.33",
     "meta-init": "0.0.5",
     "meta-loop": "0.0.8",
     "meta-project": "0.0.4",
-    "tabtab": "3.0.2"
+    "tabtab": "3.0.2",
+    "tildify": "1.2.0"
   },
   "devDependencies": {
     "apply-template": "4.0.1",
