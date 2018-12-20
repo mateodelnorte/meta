@@ -27,8 +27,10 @@ exports.run = (cwd, argv) => {
 
   // Load user plugins.
   const userPlugins = findPlugins(cwd);
-  debug(`\nLoading plugins:`);
-  userPlugins.forEach(pluginPath => registerPlugin(program, pluginPath));
+  if (userPlugins.size) {
+    debug(`\nLoading plugins:`);
+    userPlugins.forEach(pluginPath => registerPlugin(program, pluginPath));
+  }
 
   // Load core plugins after, so users can override them.
   debug(`\nLoading core plugins:`);
