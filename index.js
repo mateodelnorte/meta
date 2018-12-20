@@ -1,6 +1,8 @@
+const { gray, green } = require('chalk');
 const debug = require('debug')('meta');
 const fs = require('fs');
 const path = require('path');
+
 const meta = require('./package.json');
 const findPlugins = require('./lib/findPlugins');
 const registerPlugin = require('./lib/registerPlugin');
@@ -22,18 +24,14 @@ exports.run = (cwd, argv) => {
 
   // Load user plugins.
   const userPlugins = findPlugins(cwd);
-  userPlugins.forEach(userPluginPath =>
-    registerPlugin(program, userPluginPath)
-  );
+  debug(`\nLoading plugins:`);
+  userPlugins.forEach(pluginPath => registerPlugin(program, pluginPath));
 
   // Load core plugins after, so users can override them.
-  corePlugins.forEach((corePluginPath, name) => {
-    const userPluginPath = userPlugins.get(name);
-    if (userPluginPath) {
-      debug(`Skipping core plugin: '${name}'\n  because '${userPluginPath}' is already in use`) // prettier-ignore
-    } else {
-      registerPlugin(program, corePluginPath);
-    }
+  debug(`\nLoading core plugins:`);
+  corePlugins.forEach((pluginPath, name) => {
+    if (userPlugins.has(name)) return debug(`  ${green('+')} ${name} ${gray('(skip)')}`); // prettier-ignore
+    registerPlugin(program, pluginPath);
   });
 
   if (fs.existsSync('.meta')) {
