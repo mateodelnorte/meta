@@ -1,24 +1,24 @@
 language: node_js
-cache:
-  directories:
-    - ~/.npm
+node_js:
+  - '8'
+  - '10'
+  - 'node'
+cache: npm
 notifications:
   email: false
-node_js:
-  - 8
-  - 10
-  - 11
 before_install:
-  - npm install -g greenkeeper-lockfile semantic-release codecov
-install:
-  - npm install
-before_script: greenkeeper-lockfile-update
+  - npm install -g codecov
 script:
   - npm run test
   - codecov
-after_script: greenkeeper-lockfile-upload
-after_success:
-  - semantic-release
 branches:
   except:
-    - "/^v\\d+\\.\\d+\\.\\d+$/"
+    - '/^v\d+\.\d+\.\d+$/'
+jobs:
+  include:
+    - stage: deploy
+      if: branch == master && !fork
+      node_js: '8.9.1' # pre-installed version
+      script:
+        - npm install -g semantic-release@^15
+        - semantic-release
