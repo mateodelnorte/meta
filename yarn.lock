@@ -4983,10 +4983,10 @@ meta-npm@0.0.28:
     meta-loop "^0.0.5"
     symlink-meta-dependencies "^0.0.3"
 
-meta-project@0.0.4:
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/meta-project/-/meta-project-0.0.4.tgz#0ebdd105874baa6f08d35496b9fe69b155fb29a5"
-  integrity sha512-z+GBeQxrVUq5WyM71nQb/zk2Pa/4RVNOrk50SxUdTP+9mlzRFXevCyhsgBq0FfHj+pgsfG+5aVEOANfBKQ7QWA==
+meta-project@0.0.5:
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/meta-project/-/meta-project-0.0.5.tgz#eb378770efcdc346ace29571cfa59c070696ce0f"
+  integrity sha512-HhVKxi0PyhEebL1sqLMfSRRhWc74xwzk06aiiBlj1t62krJp2Py8XYiPyiMpTgOazSioLtlOuhlJWHBSCeK0tQ==
   dependencies:
     chalk "^1.1.3"
     commander "^2.9.0"
@@ -7439,6 +7439,13 @@ through2@^2.0.0:
   version "2.3.8"
   resolved "https://registry.yarnpkg.com/through/-/through-2.3.8.tgz#0dd4c9ffaabc357960b1b724115d7e0e86a2e1f5"
   integrity sha1-DdTJ/6q8NXlgsbckEV1+Doai4fU=
+
+tildify@1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/tildify/-/tildify-1.2.0.tgz#dcec03f55dca9b7aa3e5b04f21817eb56e63588a"
+  integrity sha1-3OwD9V3Km3qj5bBPIYF+tW5jWIo=
+  dependencies:
+    os-homedir "^1.0.0"
 
 timed-out@^4.0.0:
   version "4.0.1"
