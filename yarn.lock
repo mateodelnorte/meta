@@ -1509,6 +1509,17 @@ get-meta-file@^0.0.5:
     inquirer "^3.2.2"
     prompt-sync "^4.1.5"
 
+get-meta-file@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/get-meta-file/-/get-meta-file-1.0.0.tgz#16b94d722428b8025c21d6cf07cba3c87c09e1af"
+  integrity sha512-wdmcztuzSGkXoCkSOGaXOCANISsJvJAp0zJaJQ19vyOdVVsnocdTGXl4pNGX/ua5iKG1CUTxELhvM1TxlY3Qig==
+  dependencies:
+    chalk "^2.1.0"
+    debug "^2.3.3"
+    findup-sync "^2.0.0"
+    inquirer "^3.2.2"
+    prompt-sync "^4.1.5"
+
 get-stdin@^6.0.0:
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/get-stdin/-/get-stdin-6.0.0.tgz#9e09bf712b360ab9225e812048f71fde9c89657b"
@@ -2953,6 +2964,14 @@ meta-exec@^0.0.8:
     chalk "^1.1.3"
     debug "^2.6.0"
 
+meta-exec@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/meta-exec/-/meta-exec-1.0.0.tgz#3aa0fb87debfb7d910c08ffb4b4cc58750b058ed"
+  integrity sha512-F1CtWjHBbEQBRSIEAYVamKr38sSrrsAF7IqYNwejjHuOnQXXKfxf3BQ08XGyVri05zL9oeBppymb+lJ6vE9iTQ==
+  dependencies:
+    chalk "^1.1.3"
+    debug "^2.6.0"
+
 meta-gh@0.0.5:
   version "0.0.5"
   resolved "https://registry.yarnpkg.com/meta-gh/-/meta-gh-0.0.5.tgz#f40cc451483135cdae8596ec4ac41ba6cb98333e"
@@ -2962,18 +2981,18 @@ meta-gh@0.0.5:
     meta-loop "^0.0.5"
     superagent "^3.5.2"
 
-meta-git@0.0.33:
-  version "0.0.33"
-  resolved "https://registry.yarnpkg.com/meta-git/-/meta-git-0.0.33.tgz#6de01cc37aa86c20bf02ac3eed48ca905c2dbc6d"
-  integrity sha512-qQadvUdDH4mcf76XhziMidsSrO8KrDRPpOR66+1cqRTc6YuSQ17fj3J1lle6hcvd3jiT749gCOibySD4kUuxlA==
+meta-git@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/meta-git/-/meta-git-1.0.0.tgz#feec6df6e6d6932d59a50b8b0eabfdeaaa181269"
+  integrity sha512-vU75bcfbBIzdXlAEcmh0c2uG7X5jrKKq72vvZgZ9xeSx3RYIgnhKEwvd/tCAUQMk2ibkcq8uK4fGxo6Hip/v7A==
   dependencies:
-    chalk "^1.1.3"
+    chalk "^2.4.1"
     commander "^2.9.0"
-    debug "^2.3.3"
-    get-meta-file "^0.0.5"
+    debug "^4.1.0"
+    get-meta-file "^1.0.0"
     loop "^3.0.6"
-    meta-exec "^0.0.8"
-    meta-loop "^0.0.5"
+    meta-exec "^1.0.0"
+    meta-loop "^1.0.0"
 
 meta-init@0.0.5:
   version "0.0.5"
@@ -3003,6 +3022,15 @@ meta-loop@^0.0.5:
     debug "^2.6.3"
     get-meta-file "^0.0.5"
     loop "^3.0.1"
+
+meta-loop@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/meta-loop/-/meta-loop-1.0.0.tgz#971c2dc172908207b10e243214e0df26861449a2"
+  integrity sha512-4b/QkKvijN7Y1ZJYLLw9V5/xeP1b7ODY19JRL0DXcaIbjRXdDrQsFt4YZRKw2QzftDfUyp7L4ch8hkUvYhCcpw==
+  dependencies:
+    debug "^4.1.0"
+    get-meta-file "^1.0.0"
+    loop "^3.0.6"
 
 meta-npm@0.0.28:
   version "0.0.28"
