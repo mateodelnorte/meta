@@ -3005,13 +3005,13 @@ meta-init@0.0.5:
     git-remote-origin-url "^2.0.0"
     inquirer "^3.0.6"
 
-meta-loop@0.0.8:
-  version "0.0.8"
-  resolved "https://registry.yarnpkg.com/meta-loop/-/meta-loop-0.0.8.tgz#98032f377161e715e0a0e9b0a0b3c0627e55b0b9"
-  integrity sha512-pvunTzpEhe92a9yqaq4lsQogRBId78ypbXZ+NoEvG+lC/DIeIZ9G7QPhrc9nwtIWiDbj9K3Ee6863VwNkJ3w+g==
+meta-loop@1.0.0, meta-loop@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/meta-loop/-/meta-loop-1.0.0.tgz#971c2dc172908207b10e243214e0df26861449a2"
+  integrity sha512-4b/QkKvijN7Y1ZJYLLw9V5/xeP1b7ODY19JRL0DXcaIbjRXdDrQsFt4YZRKw2QzftDfUyp7L4ch8hkUvYhCcpw==
   dependencies:
-    debug "^2.6.3"
-    get-meta-file "^0.0.5"
+    debug "^4.1.0"
+    get-meta-file "^1.0.0"
     loop "^3.0.6"
 
 meta-loop@^0.0.5:
@@ -3022,15 +3022,6 @@ meta-loop@^0.0.5:
     debug "^2.6.3"
     get-meta-file "^0.0.5"
     loop "^3.0.1"
-
-meta-loop@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/meta-loop/-/meta-loop-1.0.0.tgz#971c2dc172908207b10e243214e0df26861449a2"
-  integrity sha512-4b/QkKvijN7Y1ZJYLLw9V5/xeP1b7ODY19JRL0DXcaIbjRXdDrQsFt4YZRKw2QzftDfUyp7L4ch8hkUvYhCcpw==
-  dependencies:
-    debug "^4.1.0"
-    get-meta-file "^1.0.0"
-    loop "^3.0.6"
 
 meta-npm@0.0.28:
   version "0.0.28"

@@ -57,7 +57,7 @@
     "debug": "4.1.0",
     "meta-git": "1.0.0",
     "meta-init": "0.0.5",
-    "meta-loop": "0.0.8",
+    "meta-loop": "1.0.0",
     "meta-project": "1.0.0",
     "tabtab": "3.0.2",
     "tildify": "1.2.0"
