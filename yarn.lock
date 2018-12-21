@@ -3083,10 +3083,10 @@ meta-git@1.0.0:
     meta-exec "^1.0.0"
     meta-loop "^1.0.0"
 
-meta-init@0.0.5:
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/meta-init/-/meta-init-0.0.5.tgz#aa9f63c9938112d2e638d21d0ef89eab86a62917"
-  integrity sha1-qp9jyZOBEtLmONIdDvieq4amKRc=
+meta-init@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/meta-init/-/meta-init-1.0.0.tgz#1a2837c16117cc3087fe10ca37102bdfd3a72716"
+  integrity sha512-f2YIlIXuU3xRBIGYWvHp6xPjAoD+UAO6ECyQberkW/94YkmSbk0cs7PxI48sxuI01/2hhLuqucZLXn7mGQX2Tg==
   dependencies:
     async "^2.3.0"
     debug "^2.3.3"
