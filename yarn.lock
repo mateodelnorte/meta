@@ -1310,10 +1310,10 @@ fill-range@^4.0.0:
     repeat-string "^1.6.1"
     to-regex-range "^2.1.0"
 
-find-file-recursively-up@0.0.0:
-  version "0.0.0"
-  resolved "https://registry.yarnpkg.com/find-file-recursively-up/-/find-file-recursively-up-0.0.0.tgz#57e83234eb76e43b8024b7d77b99dc94987bd244"
-  integrity sha1-V+gyNOt25DuAJLfXe5nclJh70kQ=
+find-file-recursively-up@1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/find-file-recursively-up/-/find-file-recursively-up-1.0.1.tgz#cf5e66dec346ba44924e9d61703c1cb5d057928b"
+  integrity sha512-QamkkPLfznbpnCJq/lUUyaIgvTNXxi3JNDkdL7Zse2fteNoz/fhK3JEdIBgBp9ktYa76z7V+wKEh+8+2/rff5g==
 
 find-module-bin@0.0.2, find-module-bin@^0.0.2:
   version "0.0.2"
@@ -3040,17 +3040,17 @@ meta-npm@0.0.28:
     meta-loop "^0.0.5"
     symlink-meta-dependencies "^0.0.3"
 
-meta-project@0.0.4:
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/meta-project/-/meta-project-0.0.4.tgz#0ebdd105874baa6f08d35496b9fe69b155fb29a5"
-  integrity sha512-z+GBeQxrVUq5WyM71nQb/zk2Pa/4RVNOrk50SxUdTP+9mlzRFXevCyhsgBq0FfHj+pgsfG+5aVEOANfBKQ7QWA==
+meta-project@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/meta-project/-/meta-project-1.0.0.tgz#75c9a09d45464fd27b3e66daa07cb6d6121a6de8"
+  integrity sha512-CDopgh/uY2pMwEND48ipb52LHDInUpXilhwJtBfKxl/sUkwdY5eNYzdyIXStEjK/XGcXvUhm5VztbEdjl7KrfQ==
   dependencies:
-    chalk "^1.1.3"
+    chalk "^2.4.1"
     commander "^2.9.0"
-    debug "^2.3.3"
-    find-file-recursively-up "0.0.0"
+    debug "^4.1.0"
+    find-file-recursively-up "1.0.1"
     loop "^3.0.6"
-    meta-exec "^0.0.8"
+    meta-exec "^1.0.0"
     mkdirp "^0.5.1"
 
 meta-yarn@1.0.0:
