@@ -70,7 +70,7 @@
     "jest": "23.6.0",
     "meta-gh": "0.0.5",
     "meta-npm": "0.0.28",
-    "meta-yarn": "0.0.5",
+    "meta-yarn": "1.0.0",
     "prettier": "1.15.3",
     "pretty-quick": "1.8.0"
   }
