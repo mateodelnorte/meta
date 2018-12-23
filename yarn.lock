@@ -871,7 +871,7 @@ debug@4.1.1:
   dependencies:
     ms "^2.1.1"
 
-debug@^2.1.2, debug@^2.2.0, debug@^2.3.3, debug@^2.4.4, debug@^2.6.0, debug@^2.6.3, debug@^2.6.8, debug@^2.6.9:
+debug@^2.1.2, debug@^2.2.0, debug@^2.3.3, debug@^2.4.4, debug@^2.6.0, debug@^2.6.8, debug@^2.6.9:
   version "2.6.9"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.9.tgz#5d128515df134ff327e90a4c93f4e077a536341f"
   integrity sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==
@@ -2950,7 +2950,7 @@ longest@^1.0.1:
   resolved "https://registry.yarnpkg.com/longest/-/longest-1.0.1.tgz#30a0b2da38f73770e8294a0d22e6625ed77d0097"
   integrity sha1-MKCy2jj3N3DoKUoNIuZiXtd9AJc=
 
-loop@^3.0.1, loop@^3.0.6:
+loop@^3.0.6:
   version "3.0.6"
   resolved "https://registry.yarnpkg.com/loop/-/loop-3.0.6.tgz#e40292ab4de2e005e1f39288ba50ab0ed63887cf"
   integrity sha512-XHtRV1OReNaRgjCqsiYFiKpsyhNxVHJqp3lBNOJ2On/dS0ym+ECDUVblnb1VbkTiTcue2a1x0xPBe8cIQgk7aA==
@@ -3110,30 +3110,21 @@ meta-loop@1.0.0, meta-loop@^1.0.0:
     get-meta-file "^1.0.0"
     loop "^3.0.6"
 
-meta-loop@^0.0.5:
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/meta-loop/-/meta-loop-0.0.5.tgz#fb20de7228f18bc64a50eb6b6b651317f57182ab"
-  integrity sha1-+yDecijxi8ZKUOtra2UTF/Vxgqs=
-  dependencies:
-    debug "^2.6.3"
-    get-meta-file "^0.0.5"
-    loop "^3.0.1"
-
-meta-npm@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/meta-npm/-/meta-npm-1.0.0.tgz#bffedafe8270ebec2b709464366ed3d91a392bc1"
-  integrity sha512-mhA++Trv1Qjo3cN6SeVvIb5Ln9a0sefC9m7vkdQNkS4erSU/2XXvv0hJlG+WEIrOGtv5m/9Kjo+U9en8czTRqg==
+meta-npm@1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/meta-npm/-/meta-npm-1.0.1.tgz#dd1a09992647c3fc760f7fd7f167167c25fb82b5"
+  integrity sha512-ssCFicUlNpLqe8T8umFTX+GwJzwJFVaeoW/7rp5lkgNpWMTXOsy0AIQ6ZBPNRrcvvD1S5P4ml1sajMZsbd7m+Q==
   dependencies:
     async "^2.1.4"
-    chalk "^1.1.3"
+    chalk "^2.0.0"
     commander "^2.9.0"
-    debug "^2.3.3"
+    debug "^4.0.0"
     find-module-bin "^0.0.2"
-    get-meta-file "^0.0.5"
+    get-meta-file "^1.0.0"
     lodash "^4.17.4"
     loop "^3.1.1"
-    meta-exec "^0.0.8"
-    meta-loop "^0.0.5"
+    meta-exec "^1.0.0"
+    meta-loop "^1.0.0"
     symlink-meta-dependencies "^0.0.3"
 
 meta-project@1.0.0:
