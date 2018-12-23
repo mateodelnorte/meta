@@ -1952,7 +1952,7 @@ inquirer@6.2.0:
     strip-ansi "^4.0.0"
     through "^2.3.6"
 
-inquirer@^3.0.6, inquirer@^3.2.2:
+inquirer@^3.2.2:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/inquirer/-/inquirer-3.3.0.tgz#9dd2f2ad765dcab1ff0443b491442a20ba227dc9"
   integrity sha512-h+xtnyk4EwKvFWHrUYsWErEVR+igKtLdchu+o0Z1RL7VU/jVMFbYir2bp6bAj8efFNxWqHX0dIss6fJQ+/+qeQ==
@@ -3090,16 +3090,16 @@ meta-git@1.0.0:
     meta-exec "^1.0.0"
     meta-loop "^1.0.0"
 
-meta-init@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/meta-init/-/meta-init-1.0.0.tgz#1a2837c16117cc3087fe10ca37102bdfd3a72716"
-  integrity sha512-f2YIlIXuU3xRBIGYWvHp6xPjAoD+UAO6ECyQberkW/94YkmSbk0cs7PxI48sxuI01/2hhLuqucZLXn7mGQX2Tg==
+meta-init@1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/meta-init/-/meta-init-1.0.2.tgz#6d733b1317deb3ee55479b7435f58853d548787d"
+  integrity sha512-PSzRogir+KJ0zL4v2RHKdaxrgCcoGjjTt4E/QDFxXOQvsKplU4B3PDpjs1Tdplo+wpehqcnoH9Yb02gL4+s9lg==
   dependencies:
     async "^2.3.0"
-    debug "^2.3.3"
-    get-meta-file "^0.0.5"
+    debug "^4.0.0"
+    get-meta-file "^1.0.0"
     git-remote-origin-url "^2.0.0"
-    inquirer "^3.0.6"
+    inquirer "^6.0.0"
 
 meta-loop@1.0.0, meta-loop@^1.0.0:
   version "1.0.0"
