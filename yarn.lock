@@ -864,7 +864,7 @@ debug@3.1.0:
   dependencies:
     ms "2.0.0"
 
-debug@4.1.1:
+debug@4.1.1, debug@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/debug/-/debug-4.1.1.tgz#3b72260255109c6b589cee050f1d516139664791"
   integrity sha512-pYAIzeRo8J6KPEaJ0VWOh5Pzkbw/RetuzehGM7QRRX5he4fPHx2rdKMB256ehJCkX+XRQm16eZLqLNS8RSZXZw==
@@ -1354,12 +1354,20 @@ find-file-recursively-up@1.0.2:
   dependencies:
     debug "4.1.1"
 
-find-module-bin@0.0.2, find-module-bin@^0.0.2:
+find-module-bin@0.0.2:
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/find-module-bin/-/find-module-bin-0.0.2.tgz#99ef84fb548aedae3bfe4da14b61846cd9888666"
   integrity sha1-me+E+1SK7a47/k2hS2GEbNmIhmY=
   dependencies:
     debug "^2.4.4"
+    global-paths "^1.0.0"
+
+find-module-bin@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/find-module-bin/-/find-module-bin-1.0.0.tgz#0cd776aaa977e4bbf1c7d6f2a847ca217a4e6db6"
+  integrity sha512-Na3tByjH3uWVlQxk/Yb3ggWUrRg4kvIT0XkwyV1kVoBMo1B6b1oqANedECRTqwo/KcXpMjh9SgBsYl8V4xiOwg==
+  dependencies:
+    debug "^4.1.1"
     global-paths "^1.0.0"
 
 find-node-modules@1.0.4:
@@ -3112,16 +3120,16 @@ meta-loop@1.0.0, meta-loop@^1.0.0:
     get-meta-file "^1.0.0"
     loop "^3.0.6"
 
-meta-npm@1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/meta-npm/-/meta-npm-1.0.1.tgz#dd1a09992647c3fc760f7fd7f167167c25fb82b5"
-  integrity sha512-ssCFicUlNpLqe8T8umFTX+GwJzwJFVaeoW/7rp5lkgNpWMTXOsy0AIQ6ZBPNRrcvvD1S5P4ml1sajMZsbd7m+Q==
+meta-npm@1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/meta-npm/-/meta-npm-1.0.2.tgz#dc0b101dc6425777d5dcde31e4e3995bd416ab32"
+  integrity sha512-epZW3iBKcSKxLppm60MCiGTganlizvBbFmwBtAn8zvI4FoKVDDBBQYQbk4rRqKjRBLTHNMOEAVfuTd891c+wnQ==
   dependencies:
     async "^2.1.4"
     chalk "^2.0.0"
     commander "^2.9.0"
     debug "^4.0.0"
-    find-module-bin "^0.0.2"
+    find-module-bin "^1.0.0"
     get-meta-file "^1.0.0"
     lodash "^4.17.4"
     loop "^3.1.1"
