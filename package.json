@@ -52,7 +52,7 @@
   },
   "homepage": "https://github.com/mateodelnorte/meta#readme",
   "dependencies": {
-    "chalk": "2.4.1",
+    "chalk": "2.4.2",
     "commander": "mateodelnorte/commander.js",
     "debug": "4.1.1",
     "meta-git": "1.0.0",
