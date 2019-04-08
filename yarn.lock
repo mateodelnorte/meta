@@ -3265,10 +3265,10 @@ meta-loop@1.0.0, meta-loop@^1.0.0:
     get-meta-file "^1.0.0"
     loop "^3.0.6"
 
-meta-npm@1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/meta-npm/-/meta-npm-1.0.2.tgz#dc0b101dc6425777d5dcde31e4e3995bd416ab32"
-  integrity sha512-epZW3iBKcSKxLppm60MCiGTganlizvBbFmwBtAn8zvI4FoKVDDBBQYQbk4rRqKjRBLTHNMOEAVfuTd891c+wnQ==
+meta-npm@1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/meta-npm/-/meta-npm-1.0.3.tgz#4bcda3798540f2c7e2288579cb14349067eaa4f5"
+  integrity sha512-7d1+oWYFh9ibpPmqjNkkWohtKv4/nXGDBiQq9/j7QFOe1DJ3BX6j8oQhv5xmMHf5fqkzriwqXFAHhXhQpIObvg==
   dependencies:
     async "^2.1.4"
     chalk "^2.0.0"
