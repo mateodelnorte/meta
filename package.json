@@ -56,7 +56,7 @@
     "commander": "mateodelnorte/commander.js",
     "debug": "4.1.1",
     "meta-git": "1.0.0",
-    "meta-init": "1.0.2",
+    "meta-init": "1.0.3",
     "meta-loop": "1.0.0",
     "meta-project": "1.0.1",
     "tabtab": "3.0.2",
