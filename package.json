@@ -52,11 +52,11 @@
   },
   "homepage": "https://github.com/mateodelnorte/meta#readme",
   "dependencies": {
-    "chalk": "2.4.1",
+    "chalk": "2.4.2",
     "commander": "mateodelnorte/commander.js",
     "debug": "4.1.1",
     "meta-git": "1.0.0",
-    "meta-init": "1.0.2",
+    "meta-init": "1.0.3",
     "meta-loop": "1.0.0",
     "meta-project": "1.0.1",
     "tabtab": "3.0.2",
@@ -64,14 +64,14 @@
   },
   "devDependencies": {
     "apply-template": "4.0.1",
-    "commitizen": "3.0.5",
+    "commitizen": "3.1.1",
     "cz-conventional-changelog": "2.1.0",
-    "husky": "1.3.0",
-    "jest": "23.6.0",
+    "husky": "2.2.0",
+    "jest": "24.8.0",
     "meta-gh": "1.0.0",
-    "meta-npm": "1.0.2",
+    "meta-npm": "1.0.3",
     "meta-yarn": "1.0.0",
-    "prettier": "1.15.3",
-    "pretty-quick": "1.8.0"
+    "prettier": "1.17.0",
+    "pretty-quick": "1.10.0"
   }
 }
