@@ -3186,10 +3186,10 @@ meta-git@1.0.0:
     meta-exec "^1.0.0"
     meta-loop "^1.0.0"
 
-meta-init@1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/meta-init/-/meta-init-1.0.3.tgz#fe0f9f01aa20f795f7ad14e7a8511c4fa4088f28"
-  integrity sha512-oHC305Qtu5jtG0Trjd0EqzjNOhsc7H+uiPtiaseEyiKVnFlwmwRJ+JdiU9a1fRi4o0omy4lZm3jYsa6KfoMImA==
+meta-init@1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/meta-init/-/meta-init-1.0.4.tgz#9d9925fa12345e1a22e2d6ef282c486002c7eec4"
+  integrity sha512-ZoofOd4uAViSfsF3xoLIPxw5mVRRrACQrR9VuFChHoCQyxiYdO9sJnn7eXZxpKFOfNNFiti8VwVOHTtQF+Tjag==
   dependencies:
     async "^2.3.0"
     debug "^4.0.0"
