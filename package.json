@@ -75,7 +75,7 @@
     "husky": "2.4.0",
     "jest": "24.8.0",
     "meta-gh": "1.0.0",
-    "meta-npm": "1.0.3",
+    "meta-npm": "1.0.4",
     "meta-yarn": "1.0.0",
     "prettier": "1.18.0",
     "pretty-quick": "1.11.0"
