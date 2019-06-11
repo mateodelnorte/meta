@@ -67,17 +67,17 @@
     "tildify": "1.2.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^8.0.0",
-    "@commitlint/config-conventional": "^8.0.0",
+    "@commitlint/cli": "8.0.0",
+    "@commitlint/config-conventional": "8.0.0",
     "apply-template": "4.0.1",
     "commitizen": "3.1.1",
     "cz-conventional-changelog": "2.1.0",
-    "husky": "^2.4.0",
-    "jest": "^24.8.0",
+    "husky": "2.4.0",
+    "jest": "24.8.0",
     "meta-gh": "1.0.0",
     "meta-npm": "1.0.3",
     "meta-yarn": "1.0.0",
-    "prettier": "^1.18.0",
-    "pretty-quick": "^1.10.0"
+    "prettier": "1.18.0",
+    "pretty-quick": "1.10.0"
   }
 }
