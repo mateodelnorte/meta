@@ -72,7 +72,7 @@
     "apply-template": "4.0.1",
     "commitizen": "3.1.1",
     "cz-conventional-changelog": "2.1.0",
-    "husky": "2.4.0",
+    "husky": "2.4.1",
     "jest": "24.8.0",
     "meta-gh": "1.0.0",
     "meta-npm": "1.0.4",
