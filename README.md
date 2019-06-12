@@ -1,4 +1,11 @@
+[![npm version](https://badge.fury.io/js/meta.svg)](https://badge.fury.io/js/meta)
 [![Build Status](https://travis-ci.com/mateodelnorte/meta.svg?branch=master)](https://travis-ci.com/mateodelnorte/meta)
+<span class="badge-npmdownloads"><a href="https://npmjs.org/package/meta" title="View this project on NPM"><img src="https://img.shields.io/npm/dm/meta.svg" alt="NPM downloads" /></a></span>
+<span class="badge-daviddm"><a href="https://www.npmjs.com/package/meta" title="View the status of this project's dependencies on NPM"><img src="https://img.shields.io/david/mateodelnorte/meta.svg" alt="Dependency Status" /></a></span>
+<span class="badge-daviddmdev"><a href="https://www.npmjs.com/package/meta" title="View the status of this project's development dependencies on DavidDM"><img src="https://img.shields.io/david/dev/mateodelnorte/meta.svg" alt="Dev Dependency Status" /></a></span>
+<img src="https://img.shields.io/github/release-date/mateodelnorte/meta.svg" alt="Latest Release Date" />
+<img src="https://img.shields.io/github/contributors/mateodelnorte/meta.svg" alt="Contributors" />
+<span class="badge-daviddmdev"><a href="https://gitter.im/meta-repos-ftw/Lobby" title="Discuss meta on Gitter"><img src="https://img.shields.io/gitter/room/mateodelnorte/meta.svg" alt="Gitter" /></a></span>
 
 # meta
 
