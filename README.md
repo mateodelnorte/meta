@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/mateodelnorte/meta.svg?branch=master)](https://travis-ci.com/mateodelnorte/meta)
+
 # meta
 
 meta is a tool for managing multi-project systems and libraries. It answers the conundrum of choosing between a mono repo or many repos by saying "both", with a meta repo!
