@@ -64,7 +64,7 @@
     "meta-loop": "1.0.0",
     "meta-project": "2.0.0",
     "tabtab": "3.0.2",
-    "tildify": "1.2.0"
+    "tildify": "2.0.0"
   },
   "devDependencies": {
     "@commitlint/cli": "8.0.0",
