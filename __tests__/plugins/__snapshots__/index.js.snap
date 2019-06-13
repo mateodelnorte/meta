@@ -106,6 +106,7 @@ Options:
 Commands:
   clean         delete the node_modules folder in meta and child repositories
   install       npm install meta and child repositories
+  update        npm update meta and child repositories
   link [--all]  npm link child repositories where used within child and meta repositories
   outdated      check outdated dependencies in meta and child repositories
   publish       npm publish meta and child repositories
