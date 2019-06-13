@@ -2,6 +2,6 @@ _book
 node_modules
 npm-debug.log
 coverage
-plugins
+plugins/*
 yarn-error.log
 coverage
