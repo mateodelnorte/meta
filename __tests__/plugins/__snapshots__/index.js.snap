@@ -98,24 +98,20 @@ Commands:
 exports[`plugins should include meta init as dependency 1`] = `""`;
 
 exports[`plugins should include meta npm as dev dependency 1`] = `
-"
-  Usage: meta-npm [options] [command]
+"Usage: meta-npm [options] [command]
 
-  Options:
+Options:
+  -h, --help    output usage information
 
-    -h, --help    output usage information
-
-  Commands:
-
-    clean         delete the node_modules folder in meta and child repositories
-    install       npm install meta and child repositories
-    update        npm update meta and child repositories
-    link [--all]  npm link child repositories where used within child and meta repositories
-    outdated      check outdated dependencies in meta and child repositories
-    publish       npm publish meta and child repositories
-    run           npm run commands against meta and child repositories
-    symlink       directly symlink meta and child repositories without using global npm link
-    help [cmd]    display help for [cmd]
+Commands:
+  clean         delete the node_modules folder in meta and child repositories
+  install       npm install meta and child repositories
+  link [--all]  npm link child repositories where used within child and meta repositories
+  outdated      check outdated dependencies in meta and child repositories
+  publish       npm publish meta and child repositories
+  run           npm run commands against meta and child repositories
+  symlink       directly symlink meta and child repositories without using global npm link
+  help [cmd]    display help for [cmd]
 "
 `;
 
