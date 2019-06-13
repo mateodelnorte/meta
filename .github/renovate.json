@@ -1,0 +1,14 @@
+{
+  "extends": ["config:base"],
+  "packageRules": [
+    {
+      "groupName": "meta",
+      "packagePatterns": ["^meta-", "get-meta-file"],
+      "automerge": true
+    },
+    {
+      "depTypeList": ["devDependencies"],
+      "enabled": false
+    }
+  ]
+}
