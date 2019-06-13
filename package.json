@@ -59,7 +59,7 @@
     "chalk": "2.4.2",
     "commander": "mateodelnorte/commander.js",
     "debug": "4.1.1",
-    "meta-git": "1.0.0",
+    "meta-git": "1.1.0",
     "meta-init": "1.0.4",
     "meta-loop": "1.1.0",
     "meta-project": "2.1.0",
