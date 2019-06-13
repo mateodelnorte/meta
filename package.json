@@ -74,7 +74,7 @@
     "cz-conventional-changelog": "2.1.0",
     "husky": "2.4.1",
     "jest": "24.8.0",
-    "meta-gh": "1.0.0",
+    "meta-gh": "1.1.0",
     "meta-npm": "1.0.4",
     "meta-yarn": "1.0.2",
     "prettier": "1.18.2",
