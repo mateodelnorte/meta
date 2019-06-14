@@ -3,7 +3,7 @@
   "packageRules": [
     {
       "groupName": "meta",
-      "packagePatterns": ["^meta-", "get-meta-file"],
+      "packagePatterns": ["^meta-", "find-file-recursively-up", "get-meta-file", "loop", "symlink-meta-dependencies"],
       "automerge": true
     },
     {
