@@ -21,7 +21,7 @@ meta is powered by plugins that wrap common commands, letting you execute them a
 
 `npm i -g meta` will install a `meta` command on your system.
 
-### `meta init` & `meta project add`
+### initializing
 
 To create a new meta project: 
 
@@ -31,7 +31,9 @@ To create a new meta project:
 
 meta will have created a .meta file to hold references to any child repositories you add. 
 
- 4. to add new projects, use `meta project add [folder] [repo url]`
+ 4. 
+    (a) to create a new project, use `meta project create [folder] [repo url]`
+    (b) to import an existing project, use `meta project import [folder] [repo url]`
 
 for each project added, meta will update your .gitignore file and the .meta file with references to the new child repo
 
