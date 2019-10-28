@@ -60,6 +60,7 @@
     "chalk": "2.4.2",
     "commander": "mateodelnorte/commander.js",
     "debug": "4.1.1",
+    "liftoff": "^3.1.0",
     "meta-git": "1.1.2",
     "meta-init": "1.2.3",
     "meta-loop": "1.2.2",

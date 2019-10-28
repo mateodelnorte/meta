@@ -2,6 +2,7 @@ const { gray, green } = require('chalk');
 const debug = require('debug')('meta');
 const fs = require('fs');
 const path = require('path');
+const Liftoff = require('liftoff');
 
 const meta = require('./package.json');
 const findPlugins = require('./lib/findPlugins');
@@ -18,31 +19,38 @@ Object.keys(meta.dependencies).forEach(name => {
 
 exports.version = meta.version;
 
-exports.run = (cwd, argv) => {
-  const program = require('commander').version(meta.version);
+const cli = new Liftoff({
+  name: 'meta',
+  configName: '.meta',
+  extensions: { '': null },
+});
 
-  // Ensure `cwd` is actually the working directory.
-  cwd = path.resolve(cwd);
-  process.chdir(cwd);
+exports.run = () =>
+  cli.launch({}, env => {
+    const program = require('commander').version(meta.version);
 
-  // Load user plugins.
-  const userPlugins = findPlugins(cwd);
-  if (userPlugins.size) {
-    debug(`\nLoading plugins:`);
-    userPlugins.forEach(pluginPath => registerPlugin(program, pluginPath));
-  }
+    // Ensure `cwd` is actually the working directory.
+    cwd = path.resolve(env.cwd);
+    process.chdir(cwd);
 
-  // Load core plugins after, so users can override them.
-  debug(`\nLoading core plugins:`);
-  corePlugins.forEach((pluginPath, name) => {
-    if (userPlugins.has(name)) return debug(`  ${green('+')} ${name} ${gray('(skip)')}`); // prettier-ignore
-    registerPlugin(program, pluginPath);
+    // Load user plugins.
+    const userPlugins = findPlugins(cwd);
+    if (userPlugins.size) {
+      debug(`\nLoading plugins:`);
+      userPlugins.forEach(pluginPath => registerPlugin(program, pluginPath));
+    }
+
+    // Load core plugins after, so users can override them.
+    debug(`\nLoading core plugins:`);
+    corePlugins.forEach((pluginPath, name) => {
+      if (userPlugins.has(name)) return debug(`  ${green('+')} ${name} ${gray('(skip)')}`); // prettier-ignore
+      registerPlugin(program, pluginPath);
+    });
+
+    if (fs.existsSync('.meta')) {
+      const gitPlugin = userPlugins.get('meta-git') || 'meta-git';
+      require(gitPlugin).update({ dryRun: true });
+    }
+
+    program.parse(process.argv);
   });
-
-  if (fs.existsSync('.meta')) {
-    const gitPlugin = userPlugins.get('meta-git') || 'meta-git';
-    require(gitPlugin).update({ dryRun: true });
-  }
-
-  program.parse(argv);
-};
