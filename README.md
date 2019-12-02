@@ -17,23 +17,21 @@ meta is powered by plugins that wrap common commands, letting you execute them a
 
 # getting started
 
-## installing
+## Install
 
 `npm i -g meta` will install a `meta` command on your system.
 
-### initializing
+### Initialize
 
 To create a new meta project: 
 
- 1. create a new directory for your meta project `mkdir my-meta-repo`
- 2. initialize a new git repository in your new dir: `cd my-meta-repo && git init`
- 3. initialize your new repository as a meta repo: `meta init`
-
-meta will have created a .meta file to hold references to any child repositories you add. 
-
- 4. 
-    (a) to create a new project, use `meta project create [folder] [repo url]`
-    (b) to import an existing project, use `meta project import [folder] [repo url]`
+1. create a new directory for your meta project `mkdir my-meta-repo`
+2. initialize a new git repository in your new dir: `cd my-meta-repo && git init`
+3. initialize your new repository as a meta repo: `meta init`
+    1. meta will have created a .meta file to hold references to any child repositories you add. 
+4. either create a new project, or import an existing one.
+    1. to create a new project, use `meta project create [folder] [repo url]`
+    2. to import an existing project, use `meta project import [folder] [repo url]`
 
 for each project added, meta will update your .gitignore file and the .meta file with references to the new child repo
 
@@ -41,7 +39,9 @@ for each project added, meta will update your .gitignore file and the .meta file
 
 ### `meta git clone` 
 
-To clone an existing meta repo, you need only execute `meta git clone [meta repo url]`. meta will clone your meta repo and all child repositories at once. 
+To clone an existing meta repo, you need only execute `meta git clone [meta repo url]`. meta will clone your meta repo and all child repositories at once.
+
+P.S. Currently, nested meta repos are not supported. This means that you should not put another meta repo inside of your meta repo. If you want to accomplish a nested folder structure, please play around with the `.meta` file instead. If you really want this functionality, we'd be happy to accept a PR.
 
  [![asciicast](https://asciinema.org/a/2rkev7pu41cv51a0bajwnxu7s.png)](https://asciinema.org/a/2rkev7pu41cv51a0bajwnxu7s)
 
