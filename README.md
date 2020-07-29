@@ -108,6 +108,7 @@ And if you prefer the speediness of yarn, try `meta-yarn` with `npm install --sa
 ### Third-party Plugins
 
 * [meta-bump](https://github.com/patrykzurawik/meta-bump)
+* [meta-release](https://github.com/alqh/meta-release)
 
 ### Available Templates
 
