@@ -109,6 +109,7 @@ And if you prefer the speediness of yarn, try `meta-yarn` with `npm install --sa
 
 * [meta-bump](https://github.com/patrykzurawik/meta-bump)
 * [meta-release](https://github.com/alqh/meta-release)
+* [meta-search](https://www.npmjs.com/package/meta-search)
 
 ### Available Templates
 
