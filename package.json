@@ -59,7 +59,7 @@
   "dependencies": {
     "chalk": "3.0.0",
     "commander": "mateodelnorte/commander.js",
-    "debug": "4.1.1",
+    "debug": "4.2.0",
     "meta-git": "1.1.3",
     "meta-init": "1.2.3",
     "meta-loop": "1.2.2",
