@@ -71,6 +71,18 @@ meta git clone git@github.com:mateodelnorte/meta.git
 
 [![asciicast](https://asciinema.org/a/2rkev7pu41cv51a0bajwnxu7s.png)](https://asciinema.org/a/2rkev7pu41cv51a0bajwnxu7s)
 
+## Getting meta project updates
+
+If you are working on a team and another members adds a project to the meta repository, to get the project, run `meta git update`.
+
+```sh
+# get new .meta file
+git pull origin master
+
+# clone missing projects
+meta git update
+```
+
 # working with meta
 
 ## meta exec
