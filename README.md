@@ -15,13 +15,28 @@ meta is a tool for managing multi-project systems and libraries. It answers the 
 
 meta is powered by plugins that wrap common commands, letting you execute them against some or all of the repos in your solution at once. meta is built on [loop](https://github.com/mateodelnorte/loop), and as such inherits loops ability to easily target a particular set of directories for executing a common command (eg `meta git status --include-only dir1,dir2`. See [loop](https://github.com/mateodelnorte/loop) for more available options). 
 
+meta is packaged with a few of these core plugins by default: https://github.com/mateodelnorte/meta/blob/master/package.json#L63-L66
+
+## Why meta?
+
+  - clone a many-project architecture in one line
+  - give every engineer on your team the same project setup, regardless of where it's cloned
+  - npm / yarn install against all your projects at once
+  - execute arbitrary commands against many repos to manage your projects
+  - super simple plugin architecture using commander.js
+  - easily wrap commands for working with any platform, not just Node!
+  - meta repo keeps code in per project repos, benefiting deployment and reuse
+  - use the same tools you always use. no strange side effects of git submodules or subtree
+  - give different teams different slices of your architecture, with multiple metarepos!
+  - use `meta project migrate` to migrate mono-repos to a meta repo consisting of many repos
+
 # getting started
 
 ## installing
 
 `npm i -g meta` will install a `meta` command on your system.
 
-### initializing
+## initializing a new meta project
 
 To create a new meta project: 
 
@@ -39,35 +54,41 @@ for each project added, meta will update your .gitignore file and the .meta file
 
  [![asciicast](https://asciinema.org/a/d3nnfgv3n0vj2omzsl33l8um6.png)](https://asciinema.org/a/d3nnfgv3n0vj2omzsl33l8um6)
 
-### `meta git clone` 
+You can now perform commands against all of the repositories that make up your meta repository by using `meta exec`.
 
-To clone an existing meta repo, you need only execute `meta git clone [meta repo url]`. meta will clone your meta repo and all child repositories at once. 
+For example, to list all of the files in each project:
+
+```
+meta exec "ls -la"
+```
+
+## cloning an existing meta project
+
+To clone an existing meta repo, rather than `git clone` like you are used to, simply execute `meta git clone [meta repo url]` instead. `meta` will clone your meta repo and all child repositories at once. 
+
+```
+meta git clone git@github.com:mateodelnorte/meta.git
+```
 
  [![asciicast](https://asciinema.org/a/2rkev7pu41cv51a0bajwnxu7s.png)](https://asciinema.org/a/2rkev7pu41cv51a0bajwnxu7s)
 
 # working with meta
 
-Because meta plugins wrap common commands, you shouldn't have much new syntax to memorize for some crazy new utilities nobody knows about. For instance, if you want to check the `git status` of all your repositories at once, you can just type `meta git status`: 
+The most basic way to interact with meta repositories is to use the `meta exec` command. This will let you run any command against the projects that make up your meta repo.
+
+```
+meta exec "git checkout master"
+```
+
+In many cases, that is enough. There are also special cases where the functionality provided by the initial tool wasn't quite meta-y enough, and for those, there are plugins.
+
+Meta plugins are able to wrap common commands for a friendly user experience, or, are able to extend the native tool's capabilities. For example, `git update` is not a git command, but `meta git update` will clone any repos that exist in your .meta file that aren't cloned locally - a problem that doesn't exist with a single git repo.
+
+All in all, you shouldn't have much new syntax to memorize for some crazy new utilities nobody knows about. For instance, if you want to check the `git status` of all your repositories at once, you can just type `meta git status`: 
 
  [![asciicast](https://asciinema.org/a/83lg1tvqz9gwynixq5nhwsm2k.png)](https://asciinema.org/a/83lg1tvqz9gwynixq5nhwsm2k)
 
-View what branches exist on all your repos with `meta git branch`: 
-
- [![asciicast](https://asciinema.org/a/5nt6i1dwm73igxtjgzifyqi2y.png)](https://asciinema.org/a/5nt6i1dwm73igxtjgzifyqi2y)
-
-Creating a new feature that cross-cuts a number of services, a site, and an API? Create new branches on all your repos at once with `meta git checkout -b [branch-name]`. Or, revert all modified files to their remote status with `meta git checkout .`: 
-
- [![asciicast](https://asciinema.org/a/amhfxkwax50ef4ic4g1vqyifp.png)](https://asciinema.org/a/amhfxkwax50ef4ic4g1vqyifp)
-
-Track your progress on all branches at once with `meta git status`:
-
- [![asciicast](https://asciinema.org/a/83lg1tvqz9gwynixq5nhwsm2k.png)](https://asciinema.org/a/83lg1tvqz9gwynixq5nhwsm2k)
-
-Remove unwanted untracked files on all repos with `meta git clean -fd`: 
-
- [![asciicast](https://asciinema.org/a/0s8f9wp49nfilzpub3tnf9shg.png)](https://asciinema.org/a/0s8f9wp49nfilzpub3tnf9shg)
-
-# really working with meta
+In the case a command has not been wrapped with a plugin, just use `meta exec` instead.
 
 ## plugins
 
@@ -81,17 +102,31 @@ And if you prefer the speediness of yarn, try `meta-yarn` with `npm install --sa
 
  [![asciicast](https://asciinema.org/a/agd362q71smyvblztr1kw07fy.png)](https://asciinema.org/a/agd362q71smyvblztr1kw07fy)
 
-## Why meta?
+### meta git
 
-  - clone a many-project architecture in one line
-  - give every engineer on your team the same project setup, regardless of where it's cloned
-  - npm / yarn install against all your projects at once
-  - execute arbitrary commands against many repos to manage your projects
-  - super simple plugin architecture using commander.js
-  - easily wrap commands for working with any platform, not just Node!
-  - meta repo keeps code in per project repos, benefiting deployment and reuse
-  - use the same tools you always use. no strange side effects of git submodules or subtree
-  - give different teams different slices of your architecture, with multiple metarepos!
+#### meta git status
+
+Track your progress on all branches at once with `meta git status`:
+
+ [![asciicast](https://asciinema.org/a/83lg1tvqz9gwynixq5nhwsm2k.png)](https://asciinema.org/a/83lg1tvqz9gwynixq5nhwsm2k)
+
+#### meta git branch
+
+View what branches exist on all your repos with `meta git branch`: 
+
+ [![asciicast](https://asciinema.org/a/5nt6i1dwm73igxtjgzifyqi2y.png)](https://asciinema.org/a/5nt6i1dwm73igxtjgzifyqi2y)
+ 
+#### meta git checkout
+
+Creating a new feature that cross-cuts a number of services, a site, and an API? Create new branches on all your repos at once with `meta git checkout -b [branch-name]`. Or, revert all modified files to their remote status with `meta git checkout .`: 
+
+ [![asciicast](https://asciinema.org/a/amhfxkwax50ef4ic4g1vqyifp.png)](https://asciinema.org/a/amhfxkwax50ef4ic4g1vqyifp)
+ 
+#### meta git clean
+
+Remove unwanted untracked files on all repos with `meta git clean -fd`: 
+
+ [![asciicast](https://asciinema.org/a/0s8f9wp49nfilzpub3tnf9shg.png)](https://asciinema.org/a/0s8f9wp49nfilzpub3tnf9shg)
 
 ### Available Plugins
 
