@@ -291,6 +291,34 @@ When the monorepo no longer needs to be maintained you can simply add the migrat
 
 This will cause changes to only be tracked in the child repo, rather than both, such as during the migration phase.
 
+# FAQs
+
+## How can I create a group of repositories, to, for example, run npm install on only node projects?
+
+There are two ways to do this:
+
+1. Meta repos can contain other meta repos. Make smaller groups of repos that only contain projects with commands that will be executed together. This is commonly not an option such as in migrating legacy monorepos.
+1. Use a `Makefile` to declare the groups, and use `make` commands:
+
+```
+NODE_APPS=app1,service1,app2,service2
+
+node-install:
+	meta npm install --include-only $(NODE_APPS)
+```
+
+Then you can run `make node-install`
+
+## Can I run things in parallel?
+
+Yes.
+
+```
+meta exec "npm ci" --parallel
+```
+
+Output is even grouped nicely together for you at the end! :)
+
 # Developing meta locally
 
 The best way to get started is to do the following:
