@@ -104,27 +104,71 @@ And if you prefer the speediness of yarn, try `meta-yarn` with `npm install --sa
 
 ### meta git
 
+#### meta git clone
+
+Clones a meta repository and it's child repositories.
+
+```
+meta git clone <repo>
+```
+
+#### meta git update
+
+Clones any child repositories from the `.meta` file that are missing.
+
+```
+meta git clone <repo>
+```
+
 #### meta git status
 
-Track your progress on all branches at once with `meta git status`:
+Track your progress on all branches at once:
+
+```
+meta git status
+```
 
  [![asciicast](https://asciinema.org/a/83lg1tvqz9gwynixq5nhwsm2k.png)](https://asciinema.org/a/83lg1tvqz9gwynixq5nhwsm2k)
 
 #### meta git branch
 
-View what branches exist on all your repos with `meta git branch`: 
+View what branches exist on all your repos:
+
+```
+meta git branch
+```
 
  [![asciicast](https://asciinema.org/a/5nt6i1dwm73igxtjgzifyqi2y.png)](https://asciinema.org/a/5nt6i1dwm73igxtjgzifyqi2y)
  
 #### meta git checkout
 
-Creating a new feature that cross-cuts a number of services, a site, and an API? Create new branches on all your repos at once with `meta git checkout -b [branch-name]`. Or, revert all modified files to their remote status with `meta git checkout .`: 
+Create new branches on all your repos at once:
+
+```
+meta git checkout -b [branch-name]
+```
+
+Check out an existing branch in all projects:
+
+```
+meta git checkout main
+```
+
+Revert all modified files to their remote status:
+
+```
+meta git checkout .
+```
 
  [![asciicast](https://asciinema.org/a/amhfxkwax50ef4ic4g1vqyifp.png)](https://asciinema.org/a/amhfxkwax50ef4ic4g1vqyifp)
  
 #### meta git clean
 
-Remove unwanted untracked files on all repos with `meta git clean -fd`: 
+Remove unwanted untracked files on all repos:
+
+```
+meta git clean -fd
+```
 
  [![asciicast](https://asciinema.org/a/0s8f9wp49nfilzpub3tnf9shg.png)](https://asciinema.org/a/0s8f9wp49nfilzpub3tnf9shg)
 
