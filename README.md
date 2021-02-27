@@ -240,11 +240,11 @@ npm install
 # run install for all child repos
 meta npm install
 
-# create symlinks
-meta npm link
-
-# use the symlinks
+# create symlinks to/from all child repos
 meta npm link --all
+
+# link meta itself globally
+npm link
 ```
 
 There is admittedly now the problem of updating each repository to use the newly published versions of each other. For this, we recommend using a tool like Renovate, Dependabot, or Greenkeeper.
