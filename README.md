@@ -331,6 +331,38 @@ meta exec "npm ci" --parallel
 
 Output is even grouped nicely together for you at the end! :)
 
+## How to escape expressions
+
+If you try to evaluate an expression run in meta exec, you'll notice that the expression is evaluated before being run in the target projects.
+
+```sh
+➜  meta exec "echo `pwd`" --include-only=plugins/meta-loop
+
+plugins/meta-loop:
+/Users/patrickleet/dev/mateodelnorte/meta
+plugins/meta-loop ✓
+```
+
+In these cases, simply escape the expression so that it is not executed until being run against each project rather than ahead of time:
+
+```sh
+➜  meta exec "echo \`pwd\`" --include-only=plugins/meta-loop
+
+plugins/meta-loop:
+/Users/patrickleet/dev/mateodelnorte/meta/plugins/meta-loop
+plugins/meta-loop ✓
+```
+
+Or...
+
+```sh
+➜  meta exec "echo \$(pwd)" --include-only=plugins/meta-loop 
+
+plugins/meta-loop:
+/Users/patrickleet/dev/mateodelnorte/meta/plugins/meta-loop
+plugins/meta-loop ✓
+```
+
 # Developing meta locally
 
 The best way to get started is to do the following:
