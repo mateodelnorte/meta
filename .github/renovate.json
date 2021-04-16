@@ -1,16 +1,5 @@
 {
   "extends": ["config:base"],
-  "packageRules": [
-    {
-      "groupName": "meta",
-      "packagePatterns": ["^meta-", "find-file-recursively-up", "get-meta-file", "loop", "symlink-meta-dependencies"],
-      "automerge": true
-    },
-    {
-      "depTypeList": ["devDependencies"],
-      "enabled": false
-    }
-  ],
   "automerge": true,
   "major": {
     "automerge": false
