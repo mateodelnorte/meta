@@ -78,7 +78,7 @@
     "meta-gh": "^1.1.2",
     "meta-npm": "^1.2.5",
     "meta-yarn": "^1.1.2",
-    "prettier": "^1.19.1",
+    "prettier": "2.2.1",
     "pretty-quick": "^1.11.1"
   }
 }
