@@ -9,7 +9,7 @@ const registerPlugin = require('./lib/registerPlugin');
 
 // Plugins depended on by the `meta` package.
 const corePlugins = new Map();
-Object.keys(meta.dependencies).forEach(name => {
+Object.keys(meta.dependencies).forEach((name) => {
   if (/^meta-/.test(name)) {
     const packagePath = require.resolve(path.join(name, 'package.json'));
     corePlugins.set(name, path.dirname(packagePath));
@@ -29,7 +29,7 @@ exports.run = (cwd, argv) => {
   const userPlugins = findPlugins(cwd);
   if (userPlugins.size) {
     debug(`\nLoading plugins:`);
-    userPlugins.forEach(pluginPath => registerPlugin(program, pluginPath));
+    userPlugins.forEach((pluginPath) => registerPlugin(program, pluginPath));
   }
 
   // Load core plugins after, so users can override them.

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-process.on('uncaughtException', err => {
+process.on('uncaughtException', (err) => {
   console.error(err);
   process.exit(1);
 });
