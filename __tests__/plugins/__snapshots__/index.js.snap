@@ -55,73 +55,64 @@ exports[`plugins should include meta exec as dependency 1`] = `
 `;
 
 exports[`plugins should include meta gh as dev dependency 1`] = `
-"
-  Usage: meta-gh [options] [command]
+"Usage: meta-gh [options] [command]
 
-  Options:
+Options:
+  -h, --help       output usage information
 
-    -h, --help       output usage information
-
-  Commands:
-
-    issue|is         Provides a set of util commands to work with Issues
-    milestone|ms     Provides a set of util commands to work with Milestones
-    pull-request|pr  Provides a set of util commands to work with Pull Requests
-    repo|re          Provides a set of util commands to work with Repositories
-    help [cmd]       display help for [cmd]
+Commands:
+  issue|is         Provides a set of util commands to work with Issues
+  milestone|ms     Provides a set of util commands to work with Milestones
+  pull-request|pr  Provides a set of util commands to work with Pull Requests
+  repo|re          Provides a set of util commands to work with Repositories
+  help [cmd]       display help for [cmd]
 "
 `;
 
 exports[`plugins should include meta git as dependency 1`] = `
-"
-  Usage: meta-git [options] [command]
+"Usage: meta-git [options] [command]
 
-  Options:
+Options:
+  -h, --help  output usage information
 
-    -h, --help  output usage information
-
-  Commands:
-
-    add         Add file contents to the index
-    branch      List, create, or delete branches
-    checkout    Switch branches or restore working tree files
-    clean       Remove untracked files from the working tree
-    clone       Clone meta and child repositories into new directories
-    commit      Record changes to the repository
-    diff        Show changes between commits, commit and working tree, etc
-    fetch       Download objects and refs from another repository
-    merge       Join two or more development histories together
-    pull        Fetch from and integrate with another repository or a local branch
-    push        Update remote refs along with associated objects
-    remote      Manage set of tracked repositories
-    status      Show the working tree status
-    tag         Create, list, delete or verify a tag object signed with GPG
-    update      Clone any repos that exist in your .meta file but aren't cloned locally
-    help [cmd]  display help for [cmd]
+Commands:
+  add         Add file contents to the index
+  branch      List, create, or delete branches
+  checkout    Switch branches or restore working tree files
+  clean       Remove untracked files from the working tree
+  clone       Clone meta and child repositories into new directories
+  commit      Record changes to the repository
+  diff        Show changes between commits, commit and working tree, etc
+  fetch       Download objects and refs from another repository
+  merge       Join two or more development histories together
+  pull        Fetch from and integrate with another repository or a local branch
+  push        Update remote refs along with associated objects
+  remote      Manage set of tracked repositories
+  status      Show the working tree status
+  tag         Create, list, delete or verify a tag object signed with GPG
+  update      Clone any repos that exist in your .meta file but aren't cloned locally
+  help [cmd]  display help for [cmd]
 "
 `;
 
 exports[`plugins should include meta init as dependency 1`] = `""`;
 
 exports[`plugins should include meta npm as dev dependency 1`] = `
-"
-  Usage: meta-npm [options] [command]
+"Usage: meta-npm [options] [command]
 
-  Options:
+Options:
+  -h, --help    output usage information
 
-    -h, --help    output usage information
-
-  Commands:
-
-    clean         delete the node_modules folder in meta and child repositories
-    install       npm install meta and child repositories
-    update        npm update meta and child repositories
-    link [--all]  npm link child repositories where used within child and meta repositories
-    outdated      check outdated dependencies in meta and child repositories
-    publish       npm publish meta and child repositories
-    run           npm run commands against meta and child repositories
-    symlink       directly symlink meta and child repositories without using global npm link
-    help [cmd]    display help for [cmd]
+Commands:
+  clean         delete the node_modules folder in meta and child repositories
+  install       npm install meta and child repositories
+  update        npm update meta and child repositories
+  link [--all]  npm link child repositories where used within child and meta repositories
+  outdated      check outdated dependencies in meta and child repositories
+  publish       npm publish meta and child repositories
+  run           npm run commands against meta and child repositories
+  symlink       directly symlink meta and child repositories without using global npm link
+  help [cmd]    display help for [cmd]
 "
 `;
 
@@ -141,18 +132,15 @@ Commands:
 `;
 
 exports[`plugins should include meta yarn as dev dependency 1`] = `
-"
-  Usage: meta-yarn [options] [command]
+"Usage: meta-yarn [options] [command]
 
-  Options:
+Options:
+  -h, --help    output usage information
 
-    -h, --help    output usage information
-
-  Commands:
-
-    clean         delete the node_modules folder in meta and child repositories
-    install       yarn install meta and child repositories
-    link [--all]  yarn link child repositories where used within child and meta repositories
-    help [cmd]    display help for [cmd]
+Commands:
+  clean         delete the node_modules folder in meta and child repositories
+  install       yarn install meta and child repositories
+  link [--all]  yarn link child repositories where used within child and meta repositories
+  help [cmd]    display help for [cmd]
 "
 `;
