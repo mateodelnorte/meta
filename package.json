@@ -68,8 +68,8 @@
     "tildify": "2.0.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "8.3.5",
-    "@commitlint/config-conventional": "8.3.4",
+    "@commitlint/cli": "12.1.1",
+    "@commitlint/config-conventional": "12.1.1",
     "apply-template": "4.0.3",
     "commitizen": "3.1.2",
     "cz-conventional-changelog": "2.1.0",
