@@ -51,7 +51,7 @@
   },
   "homepage": "https://github.com/mateodelnorte/meta#readme",
   "dependencies": {
-    "chalk": "3.0.0",
+    "chalk": "5.0.1",
     "commander": "mateodelnorte/commander.js",
     "debug": "4.3.2",
     "meta-git": "1.1.7",
