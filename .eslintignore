@@ -1,0 +1,1 @@
+commitlint.config.js

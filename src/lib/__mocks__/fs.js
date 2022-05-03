@@ -1,11 +1,11 @@
-const fs = jest.genMockFromModule('fs');
+const fs = jest.genMockFromModule("fs");
 
 let files;
 fs.reset = () => (files = {});
 fs.write = (filePath, content) => {
-  const parts = filePath.split('/');
-  for (let i = 0, parent = ''; i < parts.length; i++) {
-    const name = parent + (i > 1 ? '/' : '') + (parts[i] || '/');
+  const parts = filePath.split("/");
+  for (let i = 0, parent = ""; i < parts.length; i++) {
+    const name = parent + (i > 1 ? "/" : "") + (parts[i] || "/");
     if (i < parts.length - 1) {
       if (name in files) {
         parent = name;
@@ -20,7 +20,7 @@ fs.write = (filePath, content) => {
   }
 };
 
-fs.statSync = name => {
+fs.statSync = (name) => {
   if (!(name in files)) {
     throw Error(`Path does not exist: '${name}'`);
   }
@@ -29,7 +29,7 @@ fs.statSync = name => {
   return stats;
 };
 
-fs.readdirSync = name => {
+fs.readdirSync = (name) => {
   const names = files[name];
   if (Array.isArray(names)) return names;
   throw Error(`Path is not a directory: '${name}'`);

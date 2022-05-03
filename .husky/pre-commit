@@ -1,4 +1,10 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
+echo "⏳ pretty-quick"
 npx pretty-quick --staged
+echo "✅ pretty-quick"
+
+echo "⏳ lint-staged"
+npx lint-staged
+echo "✅ lint-staged"

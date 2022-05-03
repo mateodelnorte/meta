@@ -1,9 +1,9 @@
-const index = require('../index.js');
+import index from "../src/index.js";
 
-jest.spyOn(process, 'exit').mockImplementation(() => {});
+jest.spyOn(process, "exit").mockImplementation(() => {});
 
-describe('index.js', () => {
-  it('should exist', () => {
+describe("index.js", () => {
+  it("should exist", () => {
     expect(index).toBeDefined();
   });
 });

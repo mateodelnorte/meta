@@ -1,9 +1,13 @@
-const { green, gray, yellow } = require('chalk');
-const cp = require('child_process');
-const debug = require('debug')('meta');
-const fs = require('fs');
-const path = require('path');
-const tildify = require('tildify');
+import chalk from "chalk";
+import cp from "child_process";
+import debugModule from "debug";
+import fs from "fs";
+import path from "path";
+import tildify from "tildify";
+
+const { green, gray, yellow } = chalk;
+
+const debug = debugModule("meta");
 
 /**
  * Meta's custom plugin resolution logic
@@ -12,7 +16,7 @@ const tildify = require('tildify');
  *
  * Returns a `Map` object that maps plugin names to plugin paths.
  */
-module.exports = (cwd, searchDir = 'node_modules') => {
+export default (cwd, searchDir = "node_modules") => {
   const rootDir = path.parse(cwd).root;
   const plugins = new Map();
   const onPlugin = (name, filePath, scopeName) => {
@@ -33,25 +37,25 @@ module.exports = (cwd, searchDir = 'node_modules') => {
 
   // Search relative to every directory in $NODE_PATH.
   const globalRoots = process.env.NODE_PATH || getDefaultGlobalRoot();
-  globalRoots.split(':').forEach(cwd => findNearbyPlugins(cwd, onPlugin));
+  globalRoots.split(":").forEach((cwd) => findNearbyPlugins(cwd, onPlugin));
 
   return plugins;
 };
 
 function getDefaultGlobalRoot() {
-  return (cp.execSync('npm root -g') + '').trim();
+  return (cp.execSync("npm root -g") + "").trim();
 }
 
 /** Check a directory for potentially-scoped /^meta-/ packages */
 function findNearbyPlugins(cwd, onPlugin) {
   if (isDir(cwd)) {
     debug(`  ${yellow(tildify(cwd))}`);
-    fs.readdirSync(cwd).forEach(name => {
+    fs.readdirSync(cwd).forEach((name) => {
       const filePath = path.join(cwd, name);
-      if (name[0] === '@') {
+      if (name[0] === "@") {
         const scopeName = name;
         const scopePath = filePath;
-        fs.readdirSync(scopePath).forEach(name => {
+        fs.readdirSync(scopePath).forEach((name) => {
           if (/^meta-/.test(name))
             onPlugin(name, path.join(scopePath, name), scopeName);
         });

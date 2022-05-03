@@ -5,3 +5,4 @@ coverage
 plugins/*
 yarn-error.log
 coverage
+dist

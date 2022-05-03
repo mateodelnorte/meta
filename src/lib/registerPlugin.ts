@@ -1,9 +1,13 @@
-const { gray, green, red, yellow } = require('chalk');
-const debug = require('debug')('meta');
-const path = require('path');
-const tildify = require('tildify');
+import chalk from "chalk";
+import debugModule from "debug";
+import path from "path";
+import tildify from "tildify";
 
-module.exports = (program, pluginPath) => {
+const { green, gray, red, yellow } = chalk;
+
+const debug = debugModule("meta");
+
+export default (program, pluginPath) => {
   try {
     const plugin = require(pluginPath);
     if (plugin.register) {
