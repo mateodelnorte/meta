@@ -6,17 +6,17 @@
     "node_modules"
   ],
   "projects": {
-    "plugins/find-file-recursively-up": "git@github.com:wongchichong/find-file-recursively-up.git",
-    "plugins/get-meta-file": "git@github.com:wongchichong/get-meta-file.git",
-    "plugins/loop": "git@github.com:wongchichong/loop.git",
-    "plugins/meta-exec": "git@github.com:wongchichong/meta-exec.git",
-    "plugins/meta-gh": "git@github.com:wongchichong/meta-gh.git",
-    "plugins/meta-git": "git@github.com:wongchichong/meta-git.git",
-    "plugins/meta-init": "git@github.com:wongchichong/meta-init.git",
-    "plugins/meta-loop": "git@github.com:wongchichong/meta-loop.git",
-    "plugins/meta-npm": "git@github.com:wongchichong/meta-npm.git",
-    "plugins/meta-project": "git@github.com:wongchichong/meta-project.git",
-    "plugins/meta-yarn": "git@github.com:wongchichong/meta-yarn.git",
-    "plugins/symlink-meta-dependencies": "git@github.com:wongchichong/symlink-meta-dependencies.git"
+    "plugins/find-file-recursively-up": "https://github.com/mateodelnorte/find-file-recursively-up",
+    "plugins/get-meta-file": "https://github.com/mateodelnorte/get-meta-file",
+    "plugins/loop": "https://github.com/mateodelnorte/loop",
+    "plugins/meta-exec": "https://github.com/mateodelnorte/meta-exec",
+    "plugins/meta-gh": "https://github.com/mateodelnorte/meta-gh",
+    "plugins/meta-git": "https://github.com/mateodelnorte/meta-git",
+    "plugins/meta-init": "https://github.com/mateodelnorte/meta-init",
+    "plugins/meta-loop": "https://github.com/mateodelnorte/meta-loop",
+    "plugins/meta-npm": "https://github.com/mateodelnorte/meta-npm",
+    "plugins/meta-project": "https://github.com/mateodelnorte/meta-project",
+    "plugins/meta-yarn": "https://github.com/mateodelnorte/meta-yarn",
+    "plugins/symlink-meta-dependencies": "https://github.com/mateodelnorte/symlink-meta-dependenciest"
   }
 }
