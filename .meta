@@ -6,17 +6,17 @@
     "node_modules"
   ],
   "projects": {
-    "plugins/find-file-recursively-up": "git@github.com:mateodelnorte/find-file-recursively-up.git",
-    "plugins/get-meta-file": "git@github.com:mateodelnorte/get-meta-file.git",
-    "plugins/loop": "git@github.com:mateodelnorte/loop.git",
-    "plugins/meta-exec": "git@github.com:mateodelnorte/meta-exec.git",
-    "plugins/meta-gh": "git@github.com:mateodelnorte/meta-gh.git",
-    "plugins/meta-git": "git@github.com:mateodelnorte/meta-git.git",
-    "plugins/meta-init": "git@github.com:mateodelnorte/meta-init.git",
-    "plugins/meta-loop": "git@github.com:mateodelnorte/meta-loop.git",
-    "plugins/meta-npm": "git@github.com:mateodelnorte/meta-npm.git",
-    "plugins/meta-project": "git@github.com:mateodelnorte/meta-project.git",
-    "plugins/meta-yarn": "git@github.com:mateodelnorte/meta-yarn.git",
-    "plugins/symlink-meta-dependencies": "git@github.com:mateodelnorte/symlink-meta-dependencies.git"
+    "plugins/find-file-recursively-up": "git@github.com:wongchichong/find-file-recursively-up.git",
+    "plugins/get-meta-file": "git@github.com:wongchichong/get-meta-file.git",
+    "plugins/loop": "git@github.com:wongchichong/loop.git",
+    "plugins/meta-exec": "git@github.com:wongchichong/meta-exec.git",
+    "plugins/meta-gh": "git@github.com:wongchichong/meta-gh.git",
+    "plugins/meta-git": "git@github.com:wongchichong/meta-git.git",
+    "plugins/meta-init": "git@github.com:wongchichong/meta-init.git",
+    "plugins/meta-loop": "git@github.com:wongchichong/meta-loop.git",
+    "plugins/meta-npm": "git@github.com:wongchichong/meta-npm.git",
+    "plugins/meta-project": "git@github.com:wongchichong/meta-project.git",
+    "plugins/meta-yarn": "git@github.com:wongchichong/meta-yarn.git",
+    "plugins/symlink-meta-dependencies": "git@github.com:wongchichong/symlink-meta-dependencies.git"
   }
 }
