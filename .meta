@@ -17,6 +17,6 @@
     "plugins/meta-npm": "https://github.com/mateodelnorte/meta-npm",
     "plugins/meta-project": "https://github.com/mateodelnorte/meta-project",
     "plugins/meta-yarn": "https://github.com/mateodelnorte/meta-yarn",
-    "plugins/symlink-meta-dependencies": "https://github.com/mateodelnorte/symlink-meta-dependenciest"
+    "plugins/symlink-meta-dependencies": "https://github.com/mateodelnorte/symlink-meta-dependencies"
   }
 }
