@@ -62,8 +62,8 @@
     "tildify": "2.0.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "12.1.4",
-    "@commitlint/config-conventional": "12.1.4",
+    "@commitlint/cli": "19.2.1",
+    "@commitlint/config-conventional": "19.1.0",
     "commitizen": "4.2.4",
     "cz-conventional-changelog": "3.3.0",
     "husky": "6.0.0",
