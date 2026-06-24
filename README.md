@@ -1,3 +1,6 @@
+> [!NOTE]
+> This project has moved to https://github.com/gitkb/meta
+
 [![Build Status](https://travis-ci.com/mateodelnorte/meta.svg?branch=master)](https://travis-ci.com/mateodelnorte/meta)
 [![npm version](https://badge.fury.io/js/meta.svg)](https://badge.fury.io/js/meta)
 <img src="https://img.shields.io/github/release-date/mateodelnorte/meta.svg" alt="Latest Release Date" />
